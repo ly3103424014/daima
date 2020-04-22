@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin: 0;
+			}
+			.box1,.box2{
+				width: 200px;
+				height: 500px;
+				border: 1px solid black;
+				float: left;
+			}
+			.tools{
+				float: left;
+			}
+			ul{
+				list-style: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<ul>
+				<li><input type="checkbox" name="" id="" value="" />开始</li>
+				<li><input type="checkbox" name="" id="" value="" />最后</li>
+				<li><input type="checkbox" name="" id="" value="" />还是</li>
+				<li><input type="checkbox" name="" id="" value="" />没有</li>
+				<li><input type="checkbox" name="" id="" value="" />结果</li>
+				<li><input type="checkbox" name="" id="" value="" />结束</li>
+			</ul>
+		</div>
+		<div class="tools">
+			<p>
+				<input type="button" name="" id="btn1" value=">>>>>>>>>>>>>>" />
+			</p>
+			<p>
+				<input type="button" name="" id="bn" value="<<<<<<<<<<<<<<<" />
+			</p>
+		</div>
+		<div class="box2">
+			<ul>
+				
+			</ul>
+		</div>
+		<script src="js源1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#btn1").click(function(){
+				$(".box1 input:checked").parent().remove().appendTo($(".box2 ul"));
+				$("input").attr("checked",false);
+			})
+			$("#bn").click(function(){
+				$(".box2 input:checked").parent().remove().appendTo($(".box1 ul"));
+				$("input").attr("checked",false);
+			})
+			
+		</script>
+	</body>
+</html>

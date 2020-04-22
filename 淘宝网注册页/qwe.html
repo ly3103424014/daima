@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+		
+		function jiecheng(z){
+				var s=1;
+				for (var i=1;i<=z;i++) {
+					s*=i;
+				}
+				return s;
+			}
+//			<!--for (var i=100;i<1000;i++) {
+//				var gewei=parseInt(i%10);
+//				var shiwei=parseInt(i/10%10);
+//				var baiwei=parseInt(i/100);
+//				if(jiecheng(gewei)+jiecheng(shiwei)+jiecheng(baiwei)==i){
+//					console.log(i+"是考拉数");
+//				}
+//			}-->
+			
+
+				var sum=0;
+				for (var a=1;a<=10;a++) {
+					sum+=jiecheng(a);
+				}
+				console.log(sum);
+		</script>
+	</body>
+</html>

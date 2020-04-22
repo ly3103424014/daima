@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			table,td{
+				border:1px solid black ;
+			}
+			td{
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="" cellspacing="" cellpadding="">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="background-color: pink;"></td>
+				<td style="background-color: pink;"></td>
+				<td style="background-color: pink;"></td>
+				<td style="background-color: pink;"></td>
+			</tr>
+		</table>
+		<script src="js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("tr").each(function(){
+				$(this).children("：even").css("background-color","pink");
+			})
+		</script>
+	</body>
+</html>

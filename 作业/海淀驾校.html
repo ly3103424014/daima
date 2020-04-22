@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+				
+			}
+			.top
+			{
+				width:1000px;
+				height:142px;
+				/*border:2px solid red;*/
+				margin:50px auto;
+				background-image: url(img/bg_02.jpg);
+				background-repeat:no-repeat;
+				position: relative;
+				
+			}
+			.l1
+			{
+				width: 107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				list-style: none;
+			
+				position: absolute;
+				top:10px;
+				
+				left:47px;
+				
+				
+				
+			}
+			.a1
+			{
+				width:107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				background-image: url(img/a_1.png);
+				background-repeat:no-repeat;
+				
+			}
+			.icon
+			{
+				width: 80px;
+				height: 80px;
+				/*border:1px solid red;*/
+				position: absolute;
+				top:15px;
+				left:21px;
+				color:white;
+				
+				
+			}
+			.icon img
+			{
+				margin:2px 10px;
+				
+				
+			}
+			.a1:hover
+			{
+				background-image: url(img/a_1_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				
+			}
+			@keyframes diyi{
+				from{transform:rotate(0deg);}
+				to{transform:rotate(360deg);}
+			}
+			.l1:hover .a1{
+				background-image: url(img/a_1_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				transition: all 2s;
+			}
+			.l2
+			{
+				width: 107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				list-style: none;
+				position: absolute;
+				top:10px;
+				left:207px;	
+			}
+			.a2
+			{
+				width:107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				background-image: url(img/a_2.png);
+				background-repeat:no-repeat;
+				
+			}
+			.a3
+			{
+				width: 80px;
+				height: 80px;
+				/*border:1px solid red;*/
+				position: absolute;
+				top:15px;
+				left:21px;
+				color:white;
+				
+				
+			}
+			.a3 img
+			{
+				margin:2px 10px;
+			}
+			.a2:hover
+			{
+				background-image: url(img/a_1_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				
+			}
+			@keyframes diyi{
+				from{transform:rotate(0deg);}
+				to{transform:rotate(360deg);}
+			}
+			.l2:hover .a2{
+				background-image: url(img/a_1_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				transition: all 2s;
+			}
+			.l3
+			{
+				width: 107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				list-style: none;
+				position: absolute;
+				top:10px;
+				left:364px;	
+			}
+			.b2
+			{
+				width:107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				background-image: url(img/a_3.png);
+				background-repeat:no-repeat;
+				
+			}
+			.b3
+			{
+				width: 80px;
+				height: 80px;
+				/*border:1px solid red;*/
+				position: absolute;
+				top:15px;
+				left:21px;
+				color:white;
+				
+				
+			}
+			.b3 img
+			{
+				margin:2px 10px;
+			}
+			.b2:hover
+			{
+				background-image: url(img/a_2_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				
+			}
+			@keyframes diyi{
+				from{transform:rotate(0deg);}
+				to{transform:rotate(360deg);}
+			}
+			.l3:hover .b2{
+				background-image: url(img/a_2_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				transition: all 2s;
+			}
+			.l4
+			{
+				width: 107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				list-style: none;
+				position: absolute;
+				top:10px;
+				left:526px;	
+			}
+			.c2
+			{
+				width:107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				background-image: url(img/a_3.png);
+				background-repeat:no-repeat;
+				
+			}
+			.c3
+			{
+				width: 80px;
+				height: 80px;
+				/*border:1px solid red;*/
+				position: absolute;
+				top:15px;
+				left:21px;
+				color:white;
+				
+				
+			}
+			.c3 img
+			{
+				margin:2px 10px;
+			}
+			.c2:hover
+			{
+				background-image: url(img/a_4_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				
+			}
+			@keyframes diyi{
+				from{transform:rotate(0deg);}
+				to{transform:rotate(360deg);}
+			}
+			.l4:hover .c2{
+				background-image: url(img/a_4_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				transition: all 2s;
+			}
+			.l5
+			{
+				width: 107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				list-style: none;
+				position: absolute;
+				top:10px;
+				left:689px;	
+			}
+			.d2
+			{
+				width:107px;
+				height: 107px;
+				/*border: 1px solid red;*/
+				background-image: url(img/a_5.png);
+				background-repeat:no-repeat;
+				
+			}
+			.d3
+			{
+				width: 80px;
+				height: 80px;
+				/*border:1px solid red;*/
+				position: absolute;
+				top:15px;
+				left:21px;
+				color:white;
+				
+				
+			}
+			.d3 img
+			{
+				margin:2px 10px;
+			}
+			.d2:hover
+			{
+				background-image: url(img/a_5_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				
+			}
+			@keyframes diyi{
+				from{transform:rotate(0deg);}
+				to{transform:rotate(360deg);}
+			}
+			.l5:hover .d2{
+				background-image: url(img/a_5_h1.png);
+				background-repeat:no-repeat;
+				animation: diyi 1s  ;
+				transition: all 2s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<ul>
+				<li class="l1">
+					<div class="a1"></div>
+					<div class="icon">
+						<img src="img/tb_1.png"/>
+						<p>我要陪练</p>
+					</div>
+						
+					
+				</li>
+				<li class="l2">
+				<div class="a2"></div>
+				<div class="a3">
+					<img src="img/tb_2.png"/>
+					<p>班型介绍</p>
+				</div>
+				</li>
+				<li class="l3">
+					<div class="b2"></div>
+					<div class="b3">
+						<img src="img/tb_3.png"/>
+						<p>班车服务</p>
+					</div>
+				</li>
+				</li>
+				<li class="l4">
+					<div class="c2"></div>
+					<div class="c3">
+						<img src="img/tb_4.png"/>
+						<p>在线法培</p>
+					</div>
+				</li>
+				<li class="l5">
+					<div class="d2"></div>
+					<div class="d3">
+						<img src="img/tb_5 .png"/>
+						<p>网上约车</p>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</body>
+</html>

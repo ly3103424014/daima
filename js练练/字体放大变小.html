@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			window.onload = function() {
+				var obox = document.getElementById("box");
+				obox.onmouseover = function() {
+					this.style.fontSize = '100px';
+				}
+				obox.onmouseout = function() {
+					this.style.fontSize = '10px';
+				}
+			}
+		</script>
+		<div id="box" style="font-size: 50px;">
+			字体
+		</div>
+	</body>
+
+</html>

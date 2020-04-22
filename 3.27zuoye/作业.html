@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.carousel{
+				width: 630px;
+				height: 450px;
+				border: 1px solid black;
+				margin: 100px auto;
+			}
+			.imagesList{
+				height: 400px;
+				overflow: hidden;
+				position: relative;
+			}
+			.imagesList ul{
+				position: absolute;
+				left: 0;
+				top: 0;
+				list-style: none;
+			}
+			.imagesList ul li{
+				width: 630px;
+				height: 400px;
+				
+			}
+			.imagesList ul li img{
+				width: 100%;
+				height: 100%;
+			}
+			.samllImage ul{
+				list-style: none;
+			}
+			.samllImage ul li{
+				float: left;
+				width: 120px;
+				height: 45px;
+				border: 3px solid orange;
+			}
+			.samllImage ul li:hover{
+				border-color:#ccc;
+			}
+			.samllImage ul li .cur{
+				border-color: orange;
+			}
+			.samllImage ul li img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="carousel">
+			<div class=" imagesList">
+				<ul>
+					<li><a href="#"><img src="img/45.jpg"/></a></li>
+					<li><a href="#"><img src="img/5e1edac1c3340.jpg"/></a></li>
+					<li><a href="#"><img src="img/8.jpg"/></a></li>
+					<li><a href="#"><img src="img/82.jpg"/></a></li>
+					<li><a href="#"><img src="img/美妆.jpeg"/></a></li>
+				</ul>
+			</div>
+			<div class="samllImage">
+				<ul>
+					<li class="cur"><a href="javascript:;"><img src="img/45.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/5e1edac1c3340.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/8.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/82.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/美妆.jpeg"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="js源1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".imagesList ul li:first").clone().appendTo($(".imagesList ul"));
+			var $m_unit=$(".imagesList ul");
+			var idx=0;
+			var timer=setInterval(move,2000);
+			$(".carousel").mouseenter(function(){
+				clearInterval(timer);
+			})
+			$(".carousel").mouseleave(function(){
+				timer=setInterval(move,2000);
+			})
+			function move(){
+				idx++;
+				$m_unit.animate({"top":-230*idx},600,function(){
+					if (idx>4){
+						idx=0;
+						$m_unit.css("top",0);
+					}
+				})
+			}
+			$(".samllImage ul li").click(function(){
+				idx=$(this).index();
+				$m_unit.stop(true).animate({"top":-230*idx},600);
+				changeCur();
+			})
+			function changecur(){
+				var n=idx > 4 ? 0:idx;
+				$(".samllImage ul li").eq(n).addClass("cur").siblings().removeClass("cur");
+			}
+			
+		</script>
+	</body>
+</html>

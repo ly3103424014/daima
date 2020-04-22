@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.box{
+				width: 500px;
+				overflow: auto;
+				margin: 50px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" >
+			<img src="../img/0.png" class="picture" width="500px" height="400px">
+		</div>
+	</body>
+	<script type="text/javascript">
+		var tu=document.getElementById("picture");
+		var index=1;
+		function autoImg(){
+			index++;
+			if(index>10){
+				index=1;
+			}
+			tu.src="../img/0"+index+".png";
+		}
+		setInterval(autoImg,1000);
+		
+		
+	</script>
+</html>

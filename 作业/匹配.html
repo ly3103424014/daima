@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+				
+			}
+			.box
+			{
+				width:500px;
+				height: 300px;
+				border:2px solid black;
+				margin:30px auto;
+				position: relative;
+				/*perspective: 500px;*/
+			}
+			.box img{
+				width:500px;
+				height: 300px;
+				position: absolute;
+				top:0;
+				left:0;
+				backface-visibility: hidden;
+				transition: all 3s;
+				
+			}
+			.box img.as
+			{
+				transform: rotateY(-180deg);
+			}
+			.box img.ad
+			{
+				transform: rotateY(0deg);
+			}
+			.box:hover .as
+			{
+				transform: rotateY(0deg);
+			}
+			.box:hover .ad
+			{
+				transform: rotateY(180deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box"><img src="img/s.png" width="500" height="300" class="as"/>
+		<img src="img/1.jpg" width="500" height="300" class="ad"/>
+		</div>
+		
+		
+	</body>
+</html>

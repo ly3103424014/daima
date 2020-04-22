@@ -1,0 +1,210 @@
+#top
+{
+	border:1px solid black;
+	width: 1000px;
+	height:800px;
+}
+#text
+{
+	border:1px solid black;
+	width:1000px;
+	height:50px;
+	background-color:greenyellow ;
+}
+#div
+{   border:1px solid black;
+	width:1000px;
+	height:50px;
+	background-color:blue ;
+	
+}
+#logo
+{  border:1px solid black;
+   width:100px;
+   height:40px;
+   float: left;
+   margin-left:100px;
+   margin-top: 5px;
+   background-color:white ;
+   color:red;
+	
+}
+#daohang
+{
+	 border:1px solid black;
+	 width:140px;
+     height:40px;
+     background-color:white ;
+     margin-left:200px;
+     color:red;
+     margin-top: 5px;
+}
+#center
+{   
+	border:1px solid black;
+	width:300px;
+	height:140px;
+	color: brown;
+	background-color:brown ;
+	float:left;
+	
+}
+#guojixinwen
+{
+	border:1px solid black;
+	width:100px;
+	height:50px;
+	background-color:white ;
+	color: brown;
+	margin-left:40px;
+	margin-top: 20px;
+}
+#asd
+{
+	border:1px solid black;
+	width:400px;
+	height:140px;
+	background-color:deepskyblue ;
+	float:left;
+}
+#guoneixinwen
+{
+	border:1px solid black;
+	width:100px;
+	height:50px;
+	background-color:white ;
+	margin-left:60px;
+	margin-top: 30px;
+	color: red;
+}
+#jkl
+{
+	border:1px solid black;
+	width:294px;
+	height:140px;
+	background-color:yellow ;
+	float:left;
+}
+#caijingkuaixun
+{
+	border:1px solid black;
+	width:140px;
+	height:60px;
+	background-color:white;
+	margin-left:60px;
+	margin-top: 30px;
+	color: red;
+}
+#hongse
+{
+	border:1px solid black;
+	width:1000px;
+	height:50px;
+	background-color:red ;
+	float:left;
+} 
+#guangaowei
+{   border:1px solid black;
+	width:140px;
+	height:40px;
+	background-color:white;
+	color:red;
+	margin-left:200px;
+	margin-top: 5px;
+}
+#lvse
+{
+	border:1px solid black;
+	width:300px;
+	height:200px;
+	background-color:green ;
+	float:left;
+	
+}
+#tiyuxinwen
+{
+	border:1px solid black;
+	width:200px;
+	height:80px;
+	background-color:white;
+	color:green;
+	margin-left:50px;
+	margin-top: 15px;
+	
+}
+#zise
+{
+	border:1px solid black;
+	width:400px;
+	height:200px;
+	background-color:darkviolet ;
+	float:left;
+}
+#yulebagua
+{
+	border:1px solid black;
+	width:200px;
+	height:80px;
+	background-color:white;
+	color:darkviolet;
+	margin-left:50px;
+	margin-top: 15px;
+	
+} 
+#huise
+{
+	border:1px solid black;
+	width:294px;
+	height:200px;
+	background-color:gray ;
+	float:left;
+}
+#shejianshangdechuntian
+{
+	border:1px solid black;
+	width:200px;
+	height:80px;
+	background-color:white;
+	color:red;
+	margin-left:50px;
+	margin-top: 15px;
+} 
+#tianlange
+{
+	border:1px solid black;
+	width:1000px;
+	height:100px;
+	background-color:skyblue;
+	float:left;
+}
+#youqinglianjie
+{
+	border:1px solid black;
+	width:300px;
+	height:50px;
+	background-color:white;
+	color:red;
+	margin-left:350px;
+	margin-top: 15px;
+} 
+#dilange
+{
+	border:1px solid black;
+	width:1000px;
+	height:100px;
+	background-color:blue;
+	float:left;
+}
+#banquanshengming
+{
+	border:1px solid black;
+	width:300px;
+	height:50px;
+	background-color:white;
+	color:deepskyblue;
+	margin-left:50px;
+	margin-top: 15px;
+}
+	
+	
+

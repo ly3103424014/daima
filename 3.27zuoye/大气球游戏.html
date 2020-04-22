@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				height: 100%;
+				background: url();
+				background-size: cover;
+				overflow: hidden;
+			}
+			
+			.ballon {
+				width: 81px;
+				height: 119px;
+				background: url() no-repeat;
+				position: absolute;
+				cursor: crosshair;
+			}
+			
+			h1 {
+				color: white;
+				font-size: 60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 id="fenshu">0</h1>
+		<h1 id="daojishi">50</h1>
+		<audio src="" id=""></audio>
+		<audio src="" autoplay=""></audio>
+		<script type="text/javascript">
+			var ofenshu = document.getElementById("fenshu");
+			var ofdaojishi = document.getElementById("daojishi");
+			var oyinyue = document.getElementById("yinyue");
+			var fenshi = 0;
+			var daojishi = 50;
+
+			function Ballon() {
+				this.top = 600;
+				this.left = Math.random() * 1200;
+				this.score = parseInt(Math.random() * 7 + 1);
+			}
+			Ballon.prototype.init = function() {
+				this.dom = document.createElement("div");
+				this.dom.className = "ballon";
+				document.body.appendChild(this.dom);
+				this.dom.style.left = this.left + "px";
+				this.dom.style.top = this.top + "px";
+				var x = -(this.score - 1) % 4 * 96;
+				var y = -parseInt((this.score - 1) / 4) * 120;
+				this.dom.style.backgroundPosition = x + "px" + y + "px";
+				var self = this;
+				this.dome.onclick = function() {
+					self
+					fenshu += self.score;
+					ofenshu.innerHTML = fenshu
+				}
+
+			}
+			Ballon.prototype.fly=function(){
+				var self=this;
+				this.timer=setInterval(function(){
+					self.top-=2*self.score;
+					if(self.top<-100){
+						
+					}
+					self.dom.style.top=self.top+"px";
+				},40)
+			}
+			Ballon.prototype.bomb=function(){
+				clearInterval(timer);
+				document.body.removeChild(this.dom);
+			}
+			var frameCount=0;
+			var timer=setInter(function(){
+				frameCount++;
+				if(frameCount%2==0){
+					daojishi--;
+					ofdaojishi.innerHTML=daojishi;
+				}
+				if(daojishi==0)
+			},600)
+		</script>
+	</body>
+14406281593
+</html>

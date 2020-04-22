@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<audio controls class="audioPlay">
+			<source src="img/大壮 - 为你我受冷风吹.mp3"></source>
+		</audio>
+		<input type="button" id="play" value="播放" />
+		<input type="button" id="muted" value="静音" />
+		<input type="number" min="1" max="100" id="volume"/>
+		<script type="text/javascript">
+			var audioPlay=document.querySelector(".audioPlay");
+			var Play=document.querySelector("#play");
+			var muted=document.querySelector("#muted");
+			Play.onclick=function(){
+				if (Play.value=="播放") {
+					this.value="暂停";
+					audioPlay.play();
+				}else{
+					this.value="播放";
+					audioPlay.pause();
+				}
+			}
+			muted.onclick=function(){
+				audioPlay.muted=!audioPlay.muted;
+			}
+			volume.onchange=function(){
+				audioPlay.volume=parseInt(this.value)/100;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.box
+			{
+				width:200px;
+				height:40px;
+				border:1px solid black;
+				margin:10px auto;
+			}
+			.box::before{
+				content:'';
+				display:block;
+				width:40px;
+				height:40px;
+				background-image:url(img/a9.jpg);
+				float:left;
+			}
+			.box input{
+				width:150px;
+				height:20px;
+				float:left;
+				margin-top:3px;
+				outline:none;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<p class="box">
+		<input type="text"  value="" name="" placeholder="请输入账号">
+		</p>
+	</body>
+</html>

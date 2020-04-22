@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.rolling{
+				width:800px;
+				height:130px;
+				border:10px solid #ccc;
+				margin:100px auto;
+				position: relative;
+			}
+			.mnuit{
+				width:5000px;
+				position:absolute;
+				left: 0;
+				top: 0;
+			}
+			.mnuit ul{
+				list-style: none;
+			}
+			.mnuit ul li{
+				float:left;				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="rolling" id="rolling">
+			<div class="mnuit" id="mnuit">
+				<ul>
+					<li><a href=""><img src="img/0.png"/></a></li>
+					<li><a href=""><img src="img/1.png"/></a></li>
+					<li><a href=""><img src="img/2.png"/></a></li>
+					<li><a href=""><img src="img/3.png"/></a></li>
+					<li><a href=""><img src="img/4.png"/></a></li>
+					<li><a href=""><img src=" img/5.png"/></a></li>
+					<li><a href=""><img src="img/6.png"/></a></li>	
+					<li><a href=""><img src="img/7.png"/></a></li>
+				</ul>
+				
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			var rolling=document.getElementById("rolling");
+			var mnuit=document.getElementById("mnuit");
+			var listul=document.getElementsByTagName("li").length;
+			listul.innerHTML+=listul.innerHTML;
+			var nowleft=0;
+			var timer;
+			move();
+			function move(){
+				clearInterval(timer);
+				timer=setInterval(function(){
+					nowleft-=3;
+					if(nowleft<-210*lislength){
+						nowleft=0;
+					}
+					mnuit.style.left=nowleft+"px";
+				},1)
+			}
+			
+			
+		</script>
+	</body>
+</html>

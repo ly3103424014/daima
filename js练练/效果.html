@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 500px;
+				height: 550px;
+				border: solid 1px black;
+				/*margin-right: 10px;*/
+				float: left;
+			}
+			.tutu
+			{
+				height: 550px;
+				position:relative;
+			}
+			.tutu img{
+				width: 500px;
+				height: 550px;
+			}
+			.mask{
+				width: 100%;
+				height: 100px;
+				background-color: black;
+				opacity: 6;
+				filter: alpha(opacity=60);
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+			}
+			.tutu h3{
+				width: 100%;
+				height: 100px;
+				line-height: 100px;
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				color:#fff;
+			}
+			.info{
+				display: none;
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				width: 100%;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="tutu">
+				<img src="img/1.jpg"/>
+				<div class="info">
+					<div class="mask"></div>
+					<h3>我的李知恩</h3>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="tutu">
+				<img src=" img/8.jpg"/>
+				<div class="info">
+					<div class="mask"></div>
+					<h3>我的宋妍妃</h3>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="tutu">
+				<img src="img/l.jpg"/>
+				<div class="info">
+					<div class="mask"></div>
+					<h3>我的哎呀</h3>
+				</div>
+			</div>
+		</div>
+		<script src=" js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".box").mouseenter(function(){
+				$(this).find(".info").fadeIn(500)
+			})
+			$(".box").mouseleave(function(){
+				$(this).find(".info").fadeOut(500)
+			})
+		</script>
+	</body>
+</html>

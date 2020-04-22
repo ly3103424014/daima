@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.box1 {
+				width: 500px;
+				height: 100px;
+				border: 1px solid black;
+			}
+			
+			.box2 {
+				width: 500px;
+				height: 100px;
+				border: 1px solid black;
+				margin-top: 10px;
+			}
+			
+			p {
+				float: left;
+				width: 60px;
+				height: 60px;
+				margin-right: 10px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box1">
+			<p></p>
+			<p class="aa"></p>
+			<p class="aa"></p>
+			<p></p>
+		</div>
+		<div class="box2">
+			<p class="aa"></p>
+			<p class="aa">哈哈哈哈</p>
+			<p></p>
+			<p></p>
+		</div>
+		<script src="js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$("p").click(function() {
+//				alert($(this).index());
+//			})
+			$(".aa").click(function() {
+				alert($(this).index());
+			})
+		</script>
+	</body>
+
+</html>

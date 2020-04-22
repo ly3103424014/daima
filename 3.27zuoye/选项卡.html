@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			ul {
+				width: 800px;
+				height: 40px;
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			ul li {
+				width: 150px;
+				height: 40px;
+				border: 1px solid yellowgreen;
+				float: left;
+				line-height: 40px;
+				text-align: center;
+				list-style: none;
+				cursor: pointer;
+				color: white;
+				background-color: yellowgreen;
+			}
+			
+			.box {
+				width: 800px;
+				height: 600px;
+				margin: auto;
+			}
+			
+			.item {
+				width: 799px;
+				height: 600px;
+				border: 2px solid yellowgreen;
+				display: none;
+				line-height: 600px;
+				text-align: center;
+				font-size: 50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul>
+			<li >第一张</li>
+			<li>第二张</li>
+			<li>第三张</li>
+			<li>第四张</li>
+			<li>第五张</li>
+		</ul>
+		<div class="box">
+			<div class="item"style="display: block;"><img src="img/1.jpg" width="800px" height="600px"/></div>
+			<div class="item" ><img src="img/45.jpg" width="800px"  height="600px"/></div>
+			<div class="item"><img src="img/5e1edac1c3340.jpg" width="800px"  height="600px"/></div>
+			<div class="item" ><img src="img/8.jpg" width="800px"  height="600px"/></div>
+			<div class="item" ><img src="img/82.jpg" width="800px"  height="600px"/></div>
+		</div>
+		<script src="js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			$(".item").hide();
+//			$(".item").eq(0).show();
+//			$("ul li ").eq(0).css("background-color","red")
+			$("ul li ").click(function(){
+                 var x=$(this).index();
+                 $(this).css("background-color","red").siblings().css("background-color","yellowgreen");
+                 $(".item").eq(x).show().siblings().hide();
+                 
+			})
+		</script>
+	</body>
+
+</html>

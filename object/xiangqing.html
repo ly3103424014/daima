@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<title>
+			蘑菇商城
+		</title>
+		<link rel="icon" type="text/css" href="img/48.png" />
+	</head>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		
+		.container {
+			width: 90%;
+			height: 100%;
+			position: relative;
+			background: #fff;
+		}
+		
+		.top {
+			height: 33px;
+			background: #f8f8f8;
+			/*border-bottom: 1px solid #F0F0F0;*/
+		}
+		
+		.top .right {
+			width: 380px;
+			height: 32.8px;
+			/*border: 1px solid black;*/
+			float: right;
+			color: #999;
+		}
+		
+		.right img {
+			width: 15px;
+			height: 15px;
+			margin-right: -2px;
+			background-repeat: no-repeat;
+			margin-top: -5px;
+		}
+		
+		.right span {
+			font-size: 15px;
+			line-height: 32.8px;
+		}
+		
+		.right a {
+			text-decoration: none;
+		}
+		
+		.shangcheng::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.denglu::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.dingdan::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.container .tu {
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+		
+		.tu1 {
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+		
+		.normal-search-content {
+			width: 522px;
+			height: 50px;
+			border: 1px solid deeppink;
+			float: left;
+			margin: 20px 40px;
+		}
+		
+		.top_nav_form {
+			border-radius: 6px;
+			background: #F7F7F7;
+			width: 100%
+		}
+		
+		.ts_txt {
+			float: left;
+			width: 462px;
+			height: 48px;
+			line-height: 48px;
+			border: none;
+			font-size: 14px;
+			background: #f7f7f7;
+			color: #666;
+			padding: 0 15px;
+			outline: none;
+		}
+		
+		.ts_btn {
+			float: right;
+			width: 58px;
+			height: 48px;
+			border: none;
+			cursor: pointer;
+			border-radius: 0 5px 5px 0;
+			background-image: url(img/jkl.png);
+			background-repeat: no-repeat;
+			background-size: 89%;
+			outline: none;
+			background-color: white;
+		}
+		
+		.row {
+			width: 310px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			float: right;
+			margin-top: 20px;
+		}
+		
+		.row .col-md-1 {
+			width: 100px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			line-height: 50px;
+		}
+		
+		.row .col-md-1 img {
+			width: 24px;
+			height: 24px;
+		}
+		
+		.row .col-md-1 a {
+			text-decoration: none;
+		}
+		
+		.btn {
+			width: 93.9px;
+			height: 34px;
+			/*border: 1px solid black;*/
+			background-color: deeppink;
+			margin-right: 20px;
+			color: white;
+		}
+		
+		.boxx {
+			width: 100%;
+			height: 400px;
+			/*border-bottom: 1px dashed #333;*/
+			position: relative;
+		}
+		
+		.tox {
+			width: 500px;
+			height: 400px;
+			/*border: 1px solid black;*/
+			line-height: 400px;
+		}
+		
+		.smallPic {
+			width: 500px;
+			height: 320px;
+			border: 1px solid black;
+		}
+		
+		.tox img {
+			width: 500px;
+			height: 320px;
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		.tox0 {
+			width: 500px;
+			height: 80px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 320px;
+			left: 0px;
+		}
+		
+		.tox0 .w1 {
+			width: 100px;
+			height: 80px;
+			/*border: 1px solid black;*/
+			float: left;
+		}
+		
+		.tox0 .w2 {
+			width: 100px;
+			height: 80px;
+			/*border: 1px solid black;*/
+			margin-left: 25px;
+			float: left;
+		}
+		
+		.tox0 .w3 {
+			width: 100px;
+			height: 80px;
+			/*border: 1px solid black;*/
+			margin-left: 25px;
+			float: left;
+		}
+		
+		.tox0 .w4 {
+			width: 100px;
+			height: 80px;
+			/*border: 1px solid black;*/
+			margin-left: 25px;
+			float: left;
+		}
+		
+		.tox0 .w1 img {
+			width: 100px;
+			height: 80px;
+		}
+		
+		.tox0 .w2 img {
+			width: 100px;
+			height: 80px;
+			position: absolute;
+			top: 0px;
+			left: 125px;
+		}
+		
+		.tox0 .w3 img {
+			width: 100px;
+			height: 80px;
+			position: absolute;
+			top: 0px;
+			left: 250px;
+		}
+		
+		.tox0 .w4 img {
+			width: 100px;
+			height: 80px;
+			position: absolute;
+			top: 0px;
+			left: 375px;
+		}
+		
+		.tox1 {
+			width: 672px;
+			height: 400px;
+			border-bottom: 1px dashed #333;
+			position: absolute;
+			top: 0px;
+			left: 500px;
+		}
+		
+		.tox1 ul {
+			list-style: none;
+		}
+		
+		.tox1 ul li {
+			border: 0px solid red;
+			width: 672px;
+			height: 40px;
+			line-height: 40px;
+			position: relative;
+			color: rgb(131, 131, 131);
+		}
+		
+		.tox1 h4 {
+			width: 80px;
+			height: 20px;
+			/*border: 1px solid black;*/
+			font-family: \5FAE\8F6F\96C5\9ED1, sans-serif;
+			color: #333;
+			position: absolute;
+			top: 10px;
+			left: 60px;
+		}
+		
+		.tox1 h5 {
+			font-size: 20px;
+			color: #333;
+			max-height: 40px;
+			overflow: hidden;
+			line-height: 20px;
+			font-weight: 700;
+		}
+		
+		.tox1 h6 {
+			margin-top: 25px;
+			font-size: 14px;
+			/*width: 40px;
+            text-align: left;*/
+			color: #999;
+			/*line-height: 32px;*/
+		}
+		
+		.tox1 ul li p {
+			width: 40px;
+			height: 35px;
+			border: #ADADAD solid 1px;
+			float: left;
+			margin-left: 10px;
+			text-align: center;
+			line-height: 40px;
+		}
+		
+		.tox1 .e2p0 {
+			margin-left: 30px;
+		}
+		
+		.tox1 ul li p:hover {
+			background-color: deeppink;
+			color: #FFFFFF;
+		}
+		
+		.tox1 ul li .e2h4_1 {
+			width: 130px;
+			height: 40px;
+			/*border:1px solid black ;*/
+			font-size: 30px;
+			line-height: 40px;
+			color: black;
+			position: absolute;
+			left: 50px;
+			top: 0px;
+		}
+		
+		.tox1 ul li .e2div0 {
+			width: 30px;
+			height: 35px;
+			font-size: 14px;
+			line-height: 40px;
+			/*border: #ADADAD solid 1px;*/
+			position: absolute;
+			top: 20px;
+			left: 0px;
+			color: #999;
+		}
+		
+		.tox1 ul li .e2div1 {
+			width: 190px;
+			height: 35px;
+			/*border: #ADADAD solid 1px;*/
+			position: absolute;
+			top: 20px;
+			left: 40px;
+		}
+		
+		.tox1 ul li .but1 {
+			background-color: deeppink;
+			border-color: deeppink;
+			width: 198px;
+			height: 46px;
+			cursor: pointer;
+			font: 18px/44px tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', sans-serif;
+			outline: none;
+			position: absolute;
+			top: 0px;
+			left: 300px;
+			border-radius: 3px;
+			text-decoration: none;
+		}
+		
+		.tox1 ul li a {
+			width: 35px;
+			height: 35px;
+			border: #ADADAD solid 1px;
+			float: left;
+			margin-left: 15px;
+			text-align: center;
+			line-height: 40px;
+			text-decoration: none;
+			color: black;
+		}
+		
+		.tox1 ul li a:hover {
+			background-color: deeppink;
+			color: #FFFFFF;
+		}
+		
+		.liji {
+			color: #FFFFFF;
+			margin-left
+		}
+		
+		.liji img {
+			width: 22px;
+			height: 24px;
+			margin-right: 5px;
+		}
+		
+		.f1 {
+			width: 100%;
+			height: 36px;
+			/*border: 1px solid black;*/
+		}
+		
+		.f1 img {
+			width: 420px;
+			height: 36px;
+		}
+		
+		.best {
+			width: 100%;
+			height: 442px;
+			/*border: 1px solid black;*/
+			background-color: #f5f5f5;
+		}
+		
+		.footer-inner {
+			width: 960px;
+			height: 442px;
+			/*border: 1px solid black;*/
+			margin: auto;
+			background-color: #f5f5f5;
+		}
+		
+		.footer-vip li {
+			list-style: none;
+		}
+		
+		.footer-list {
+			width: 960px;
+			height: 146px;
+			/*border: 1px solid black;*/
+			margin: 37px 0 25px;
+			line-height: 20px;
+		}
+		
+		.link-anim {
+			float: left;
+			width: 145px;
+			height: 146px;
+			padding-left: 16px;
+			border-right: 1px solid #e0e0e0;
+		}
+		
+		.footer a {
+			color: #4d4d4d;
+			text-decoration: none;
+			cursor: pointer;
+			font: 12px/1.5 tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+		}
+		
+		.footer-infor {
+			width: 960px;
+			height: 117.2px;
+			/*	border: 1px solid black;*/
+			text-align: center;
+			color: #fff;
+			margin-bottom: 0;
+		}
+		
+		.footer-infor-link {
+			width: 960px;
+			height: 29.6px;
+			/*border: 1px solid black;*/
+			background-color: #d7237e;
+			line-height: 30px;
+		}
+		
+		.footer-infor-link a {
+			text-decoration: none;
+			color: #FFFFFF;
+		}
+		
+		.footer-infor-txt {
+			width: 960px;
+			height: 73.6px;
+			color: #999;
+			margin: 14px 0;
+			line-height: 19px;
+		}
+		
+		.footer-ft {
+			width: 100%;
+			height: 48px;
+			/*border: 1px solid black;*/
+			padding: 4px 0 4px;
+			background-color: #fff;
+		}
+		
+		.footer-pic {
+			margin: 0 auto;
+			width: 960px;
+			height: 40px;
+			text-align: center;
+			overflow: hidden;
+		}
+		
+		.footer-pic-ico01 {
+			width: 105px;
+			background-position: 0 0;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(img/footer-hash-3de6f1ae.png);
+			background-repeat: no-repeat;
+		}
+		
+		.footer-pic-ico04 {
+			width: 99px;
+			background-position: 0 -150px;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(//shop.vipstatic.com/img/common/footer-hash-3de6f1ae.png?939748fb);
+			background-repeat: no-repeat;
+		}
+		
+		.footer-pic-ico05 {
+			width: 66px;
+			background-position: 0 -200px;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(//shop.vipstatic.com/img/common/footer-hash-3de6f1ae.png?939748fb);
+			background-repeat: no-repeat;
+		}
+		
+		.footer-pic-ico06 {
+			width: 70px;
+			background-position: 0 -250px;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(//shop.vipstatic.com/img/common/footer-hash-3de6f1ae.png?939748fb);
+			background-repeat: no-repeat;
+		}
+		
+		.footer-pic-ico07 {
+			width: 75px;
+			background-position: 0 -300px;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(//shop.vipstatic.com/img/common/footer-hash-3de6f1ae.png?939748fb);
+			background-repeat: no-repeat;
+		}
+		
+		.footer-pic-ico09 {
+			width: 76px;
+			background-position: 0 -400px;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(//shop.vipstatic.com/img/common/footer-hash-3de6f1ae.png?939748fb);
+			background-repeat: no-repeat;
+		}
+		
+		.footer-pic-ico10 {
+			width: 76px;
+			background-position: 0 -450px;
+			display: inline-block;
+			margin-right: 9px;
+			height: 40px;
+			background-image: url(//shop.vipstatic.com/img/common/footer-hash-3de6f1ae.png?939748fb);
+			background-repeat: no-repeat;
+		}
+		body {
+			padding-top: 70px;
+		}
+	</style>
+
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<!--<div class="container">
+				
+			</div>-->
+
+				<div class="top">
+					<div class="right">
+						<a href="首页.html">
+							<i><img src="img/首页.png"/></i>
+							<span id="">
+							首页
+						</span>
+						</a>
+						<a href="" class="shangcheng">
+							<i><img src="img/商城.png"/></i>
+							<span id="">
+							商城
+						</span>
+						</a>
+						<a href="denglv.html" class="denglu">
+							<i><img src="img/登录.png"/></i>
+							<span id="">
+							登录
+						</span>
+						</a>
+						<a href="" class="dingdan">
+							<span id="">
+							我的订单
+						</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+			</div>
+			<div class="container">
+				<img src="img/190102_088f4i166l4gkl08k297h5kk8690i_260x200.png" class="tu" />
+				<img src="img/5c05314cNf894bdef.jpg" class="tu1" />
+				<!--搜索框-->
+				<div class="normal-search-content">
+					<form action="" method="get" class="top_nav_form">
+						<input type="text" name="" id="" value="短袖" class="ts_txt" />
+						<input type="submit" value="" class="ts_btn" />
+					</form>
+				</div>
+				<div class="row">
+					<div class="col-md-1">
+						<a href=""><img src="img/消息.png" />消息</a>
+					</div>
+					<div class="col-md-1">
+						<a href=""><img src="img/收藏.png" />收藏</a>
+					</div>
+					<div class="col-md-1">
+						<a href=""><img src="img/购物车.png" />购物车</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="container">
+				<ul class="nav nav-tabs">
+					<li class="shangpin">
+						<div class="dropdown">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    商品分类
+    <span class="caret"></span>
+  </button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li>
+									<a href="#">女装/男装/内衣</a>
+								</li>
+								<li>
+									<a href="#">女鞋/男鞋/鞋包</a>
+								</li>
+								<li>
+									<a href="#">护肤彩妆/个护</a>
+								</li>
+								<li>
+									<a href="#">运动户外</a>
+								</li>
+								<li>
+									<a href="#">家电数码</a>
+								</li>
+								<li>
+									<a href="#">母婴童装</a>
+								</li>
+								<li>
+									<a href="#">手表配饰</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">医药健康</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li role="presentation" class="active">
+						<a href="#">首页</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">暖春行动</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">最后疯抢</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">女装</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">母婴</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">家电</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">国际</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">美妆</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">鞋包</a>
+					</li>
+					<li role="presentation" class=>
+						<a href="#">预告</a>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							更多<span class="caret">
+								
+							</span>
+						</a>
+						<ul class="dropdown-menu">
+							<div class="yincang">
+								<a href="">男装</a>
+								<a href="">运动</a>
+								<a href="">家具</a>
+								<a href="">生活</a>
+								<a href="">配饰</a>
+								<a href="">扶贫</a>
+							</div>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="boxx">
+
+					<!--<div class="tox">
+						<img src="img/11.jpg" />
+						<div class="tox0">
+						<div class="w1">
+						</div>
+						<div class="w2">
+						</div>
+						<div class="w3">
+						</div>
+						<div class="w4">
+						</div>
+						</div>
+					</div>
+					<div class="tox1">
+						<ul>
+							<li>
+								<h5 class="biao">标题</h5>
+							</li>
+							<li>
+								<h6>价格</h6>
+								<h3 class="e2h4_1">￥400.00</h3>
+							</li>
+							<li>
+								<h6>地址</h6>
+                                <h4>石家庄</h4>
+							</li>
+							<li>
+								<h6>运费</h6>
+							</li>
+							<li>
+								<h6>尺码</h6>
+								<p class="e2p0">s</p>
+								<p>m</p>
+								<p>l</p>
+								<p>xl</p>
+								<p>xll</p>
+							</li>
+							<li>
+								<div class="e2div0">数量</div>
+								<div class="e2div1">
+									<input type="checkbox" name="" id="" value="1" /> 1
+									<input type="checkbox" name="" id="" value="2" /> 2
+									<input type="checkbox" name="" id="" value="3" /> 3
+									<input type="checkbox" name="" id="" value="4" /> 4
+									<input type="checkbox" name="" id="" value="5" /> 5
+								</div>
+							</li>
+							<li>
+							<button type="submit" class="but1">
+								<span id="" class="liji">
+									<img src="img/1111.png" />立即购买
+								</span>
+							</button>
+						    </li>
+						</ul>
+					</div>-->
+				</div>
+			</div>
+			<div class="container">
+				<div class="f1">
+					<img src="img/pcpng.png" />
+				</div>
+			</div>
+			<div class="container">
+				<footer id="footer" class="footer">
+					<div class="best">
+
+						<div class="footer-inner">
+							<ul class="footer-vip">
+								<li><img src="img/50.png" /></li>
+							</ul>
+							<div class="footer-list">
+								<dl class="link-anim">
+									<dt>服务保障</dt>
+									<dd>
+										<a href="">正品保证</a>
+									</dd>
+									<dd>
+										<a href="">7天无理由放心退</a>
+									</dd>
+									<dd>
+										<a href="">7*15小时客户服务</a>
+									</dd>
+									<dd>
+										<a href="">7天无理由随心换</a>
+									</dd>
+									<dd>
+										<a href=""></a>
+									</dd>
+								</dl>
+								<dl class="link-anim">
+									<dt>购物指南</dt>
+									<dd>
+										<a href="">导购演示</a>
+									</dd>
+									<dd>
+										<a href="">订单操作</a>
+									</dd>
+									<dd>
+										<a href="">会员注册</a>
+									</dd>
+									<dd>
+										<a href="">账户管理</a>
+									</dd>
+									<dd>
+										<a href="">收货样品</a>
+									</dd>
+									<dd>
+										<a href="">会员等级</a>
+									</dd>
+								</dl>
+								<dl class="link-anim">
+									<dt>支付方式</dt>
+									<dd>
+										<a href="">23家主流网银支付</a>
+									</dd>
+									<dd>
+										<a href="">支付宝.银联等支付</a>
+									</dd>
+									<dd>
+										<a href="">信用卡支付</a>
+									</dd>
+									<dd>
+										<a href="">零钱支付</a>
+									</dd>
+								</dl>
+								<dl class="link-anim">
+									<dt>配送方式</dt>
+									<dd>
+										<a href="">配送范及运费围</a>
+									</dd>
+									<dd>
+										<a href="">验货与签收</a>
+									</dd>
+								</dl>
+								<dl class="link-anim">
+									<dt>售后服务</dt>
+									<dd>
+										<a href="">退货政策</a>
+									</dd>
+									<dd>
+										<a href="">退货流程</a>
+									</dd>
+									<dd>
+										<a href="">退货方式和失效</a>
+									</dd>
+									<dd>
+										<a href="">验货服务</a>
+									</dd>
+								</dl>
+								<dl class="tc-list">
+									<dt>APP二维码</dt>
+									<dd><img src="img/二.png" / class="lazy" src="" width="100" height="100" alt="APP二维码"></dd>
+									<dd>下载移动APP</dd>
+								</dl>
+							</div>
+							<div class="footer-infor">
+								<p class="footer-infor-link">
+									<a href="">关于我们</a>|
+									<a href="">About us</a>|
+									<a href="">Investor Relations</a>|
+									<a href="">媒体报道</a>|
+									<a href="">品牌招商</a>|
+									<a href="">隐私条款</a>|
+									<a href="">唯品诚聘</a>|
+									<a href="">唯品卡</a>|
+									<a href="">联系我们</a>
+								</p>
+								<p class="footer-infor-txt">
+									Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受
+									<a href="">用户协议</a>版权协议。
+									<br>
+									<a href="">增值业务经营许可证： </a>
+									<a href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+									<a href="">经营主体证照</a>
+									<a href="">风险监测信息</a>
+									<a href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+									<br>
+									<a href="">网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+									<a rel="" href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+								</p>
+							</div>
+						</div>
+						<div class="footer-ft">
+							<p class="footer-pic">
+								<a href=""> <i class="footer-pic-ico01"></i>
+								</a>.
+								<a href="">
+									<i class="footer-pic-ico04"></i>
+								</a>
+								<a href="">
+									<i class="footer-pic-ico05"></i>
+								</a>
+								<a href="">
+									<i class="footer-pic-ico06"></i>
+								</a>
+								<a href="">
+									<i class="footer-pic-ico07"></i>
+								</a>
+								<a href="">
+									<i class="footer-pic-ico09"></i>
+								</a>
+								<a href="">
+									<i class="footer-pic-ico10"></i>
+								</a>
+							</p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		
+		<script type="text/javascript">
+			var item_id = window.location.search.substr(1).split("=")[1];
+			if(item_id != null || item_id != '' || item_id != undefined) {
+				$.ajax({
+					type: "get",
+					url: "http://127.0.0.1/w/website/findGoodsDetail",
+					async: true,
+					data: {
+						info: item_id,
+					},
+					success: function(response) {
+						//console.log(response);
+						var obj = response.data.detail.tbk_item_info_get_response.results.n_tbk_item[0];
+						console.log(obj);
+
+						$(".boxx").html(
+							`<div class="tox" id="tox">
+							<div class="smallPic" id="smallPic">
+								<img src="${obj.pict_url}" />
+								</div>
+								<div class="tox0">
+								<div class="w1">
+								<img src="${obj.small_images.string[0]}" />
+						        </div>
+						        <div class="w2">
+						        <img src="${obj.small_images.string[1]}" />
+						        </div>
+						        <div class="w3">
+						        <img src="${obj.small_images.string[2]}" />
+						        </div>
+						        <div class="w4">
+						        <img src="${obj.small_images.string[3]}" />
+						        </div>
+								</div>
+							</div>
+							<div class="tox1">
+								<ul>
+									<li>
+										<h5 class="biao">${obj.title}</h5>
+									</li>
+									<li>
+										<h6>价格</h6>
+										<h3 class="e2h4_1">￥${obj.zk_final_price}</h3>
+									</li>
+									<li>
+										<h6>地址</h6>
+		                                <h4>${obj.provcity}</h4>
+									</li>
+									<li>
+										<h6>颜色</h6>
+										<a class="sese">黑色</a>
+										<a>白色</a>
+										<a>肤色</a>
+										<a>黄色</a>
+										<a>绿色</a>
+									</li>
+									<li>
+										<h6>尺码</h6>
+										<p class="e2p0">s</p>
+										<p>m</p>
+										<p>l</p>
+										<p>xl</p>
+										<p>xll</p>
+									</li>
+									<li>
+										<div class="e2div0">数量</div>
+										<div class="e2div1">
+											<input type="checkbox" name="" id="" value="1" /> 1
+											<input type="checkbox" name="" id="" value="2" /> 2
+											<input type="checkbox" name="" id="" value="3" /> 3
+											<input type="checkbox" name="" id="" value="4" /> 4
+											<input type="checkbox" name="" id="" value="5" /> 5
+										</div>
+									</li>
+									<li>
+									<button type="submit" class="but1">
+										<span id="" class="liji">
+											<img src="img/1111.png" />立即购买
+										</span>
+									</button>
+								    </li>
+								</ul>
+							</div>`
+						)
+
+					}
+				});
+			} else {
+				alert('数据id不能为空')
+			}
+			$(".aa").click(function() {
+				location.href = "sort.html";
+			})
+
+			$(document).on("mouseenter", ".tox0 div", function() {
+				var pic = $(".tox0 div img").eq($(this).index())[0].src;
+				$(".smallPic img").prop("src", pic);
+			})
+		</script>
+	</body>
+
+</html>

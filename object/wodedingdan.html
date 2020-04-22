@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<title>
+			蘑菇商城
+		</title>
+		<link rel="icon" type="text/css" href="img/48.png" />
+	</head>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		  }
+		  .container {
+			width: 90%;
+			height: 100%;
+			position: relative;
+			background: #fff;
+		}
+		
+		.top {
+			height: 33px;
+			background: #f8f8f8;
+			/*border-bottom: 1px solid #F0F0F0;*/
+		}
+		
+		.top .right {
+			width: 380px;
+			height: 32.8px;
+			/*border: 1px solid black;*/
+			float: right;
+			color: #999;
+		}
+		
+		.right img {
+			width: 15px;
+			height: 15px;
+			margin-right: -2px;
+			background-repeat: no-repeat;
+			margin-top: -5px;
+		}
+		
+		.right span {
+			font-size: 15px;
+			line-height: 32.8px;
+		}
+		
+		.right a {
+			text-decoration: none;
+		}
+		
+		.shangcheng::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.denglu::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.dingdan::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		.container .tu {
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+		
+		.tu1 {
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+		
+		.normal-search-content {
+			width: 522px;
+			height: 50px;
+			border: 1px solid deeppink;
+			float: left;
+			margin: 20px 40px;
+		}
+		
+		.top_nav_form {
+			border-radius: 6px;
+			background: #F7F7F7;
+			width: 100%
+		}
+		
+		.ts_txt {
+			float: left;
+			width: 462px;
+			height: 48px;
+			line-height: 48px;
+			border: none;
+			font-size: 14px;
+			background: #f7f7f7;
+			color: #666;
+			padding: 0 15px;
+			outline: none;
+		}
+		
+		.ts_btn {
+			float: right;
+			width: 58px;
+			height: 48px;
+			border: none;
+			cursor: pointer;
+			border-radius: 0 5px 5px 0;
+			background-image: url(img/jkl.png);
+			background-repeat: no-repeat;
+			background-size: 89%;
+			outline: none;
+			background-color: white;
+		}
+		
+		.row {
+			width: 310px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			float: right;
+			margin-top: 20px;
+		}
+		
+		.row .col-md-1 {
+			width: 100px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			line-height: 50px;
+		}
+		
+		.row .col-md-1 img {
+			width: 24px;
+			height: 24px;
+		}
+		
+		.row .col-md-1 a {
+			text-decoration: none;
+		}
+		body {
+			padding-top: 70px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<!--<div class="container">
+				
+			</div>-->
+
+				<div class="top">
+					<div class="right">
+						<a href="首页.html">
+							<i><img src="img/首页.png"/></i>
+							<span id="">
+							首页
+						</span>
+						</a>
+						<a href="" class="shangcheng">
+							<i><img src="img/商城.png"/></i>
+							<span id="">
+							商城
+						</span>
+						</a>
+						<a href="denglv.html" class="denglu">
+							<i><img src="img/登录.png"/></i>
+							<span id="">
+							登录
+						</span>
+						</a>
+						<a href="" class="dingdan">
+							<span id="">
+							我的订单
+						</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<img src="img/190102_088f4i166l4gkl08k297h5kk8690i_260x200.png" class="tu" />
+				<img src="img/5c05314cNf894bdef.jpg" class="tu1" />
+				<!--搜索框-->
+				<div class="normal-search-content">
+					<form action="" method="get" class="top_nav_form">
+						<input type="text" name="" id="" value="短袖" class="ts_txt" />
+						<input type="submit" value="" class="ts_btn" />
+					</form>
+				</div>
+				<div class="row">
+					<div class="col-md-1">
+						<a href=""><img src="img/消息.png" />消息</a>
+					</div>
+					<div class="col-md-1">
+						<a href=""><img src="img/收藏.png" />收藏</a>
+					</div>
+					<div class="col-md-1">
+						<a href=""><img src="img/购物车.png" />购物车</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

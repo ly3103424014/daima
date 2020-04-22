@@ -1,0 +1,83 @@
+*{
+	padding:0;
+	margin:0;
+}
+.all{
+	position: relative;
+}
+.top
+{
+	width: 1500px;
+	height:60px;
+	margin: auto;
+/*	border: 2px solid red;*/
+	background-image: url(../img/e6.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+}
+.a1
+{
+	left: 820px;
+	top: 20px;
+	position: absolute;
+	text-decoration: none;
+	    font-size: 16px;
+	        color: rgb(1, 1, 1);
+}
+.a2
+{
+	left: 995px;
+	top: 20px;
+	position: absolute;
+	text-decoration: none;
+	    font-size: 16px;
+	        color: rgb(1, 1, 1);
+}
+.top img
+{
+	left: 1160px;
+	top: 20px;
+	
+	position: absolute;
+}
+.a3
+{
+	
+	left: 1183px;
+	top: 20px;
+	position: absolute;
+	text-decoration: none;
+	color:#010101;
+	cursor: pointer;
+}
+.a4
+{
+	left: 1220px;
+	top: 20px;
+	position: absolute;
+	text-decoration: none;
+	color:#010101;
+	cursor: pointer;
+}
+.a5{
+	left: 1275px;
+	top: 20px;
+	position: absolute;
+	text-decoration: none;
+	color:#B40707;
+	cursor: pointer;
+}
+.center
+{
+	width: 1500px;
+	height: 730px;
+	margin: auto;
+	/*border: 2px solid red ;*/
+	background-image: url(../img/176.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	top:50px;
+	left:0px;
+}

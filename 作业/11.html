@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.top
+			{
+				width:100%;
+				height:360px;
+				/*border:2px solid red;*/
+				background-image: url(img/01.jpg);
+				background-repeat: no-repeat;
+				position: relative;
+				
+			}
+			.box
+			{
+				width:1360px;
+				height:78px;
+				border:2px solid yellow;
+				margin:auto;
+			}
+			.box img
+			{
+				margin-top: 10px;
+				float: left;
+				position: absolute;
+				z-index:2;
+				margin-left: -174px;
+			}
+			ul li
+			{
+				width:150px;
+				height:78px;
+				border: 1px solid black;
+				float:left;
+				list-style: none;
+				margin-right:60px;
+				text-align: center;
+				line-height: 28px;
+				
+			}
+			.a1
+			{
+				text-decoration: none;
+				color:white;
+                font-size: 18px;
+                /*float:left;*/
+                text-align:center;
+                line-height: 0px;
+				
+			}
+			.a2
+			{
+				    color: #aeaeae;
+                    font-size: 11px;
+                    text-decoration: none;
+                    text-align: center;
+                    line-height:29px;
+                    margin:0px 0px;
+                    
+            }
+            .nei
+            {
+            	width:1000px;
+            	height:277px;
+            	
+            	margin:19px 0px;
+            	display:none;
+            	
+            	
+            	
+            }
+            .nei1
+            {
+            	width:1000px;
+            	height:277px;
+            	/*border:1px solid yellow;*/
+            	
+            	
+            	display:flex;
+            	flex-direction:row;
+            	flex-wrap:wrap;
+            	
+            	
+            	
+            }
+            .vb
+            {
+            	width:198px;
+            	height:30px;
+            	/*border:1px solid yellow;*/
+            	/*line-height: 30px;*/
+                color: #e1e1e1;
+                font-size: 14px;
+                text-align: center;
+                cursor: pointer;
+            	
+            }
+            .qw
+			{
+				/*width:1061px;
+				height:78px;*/
+				/*border:2px solid yellow;*/
+				/*display:block;*/
+				position: absolute;
+				
+z-index: 2;
+			}
+			@keyframes name{
+				from{transform:translateY(-30px); }
+				to{transform:translateY(0px);}
+			}
+			 ul:hover .nei
+            {
+            	display:block;
+            	animation:name 2s;
+            }
+            .smallmask{
+            	width: 100%;
+			    height: 131px;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    z-index: 1;
+            	background:url(img/dark.png) top center;
+            }
+             /*.dakuang
+            {
+            	width:100%;
+            	height:275px;
+            	position: absolute;
+            	top:0;
+            	left: 0;
+            	display:none;
+            }*/
+            
+			.fullmask{
+            	width: 100%;
+			    height:360px;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    z-index: 1;
+            	background:url(img/dark.png) no-repeat top center;
+            	background-size: 100% 100%;
+            }
+	</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="smallmask"></div>
+			<div class="fullmask"></div>
+			<div class="box">
+				<img src="img/ic.png"/>
+				<ul class="qw">
+					<li>
+						<a href="" class="a1">游戏资料</a>
+						<p><a href="" class="a2">GAME INFO</a></p>
+						<div class="dakuang"></div>	
+					<div class="nei"><div class="nei1">
+					        <p class="vb">新手指引</p>
+							<p class="vb">资料库</p>
+							<p class="vb">云顶之弈</p>
+							<p class="vb">攻略中心</p>
+							<p class="vb">开发者基地</p>
+							<p class="vb">海克斯战利品库</p>
+							<p class="vb">英雄联盟宇宙</p>
+							<p class="vb">点卷充值</p>
+							<p class="vb">道具城</p>
+							<p class="vb">周边商城</p>
+							<p class="vb">LOL桌游</p>
+							<p class="vb">LOL信用卡</p>
+							<p class="vb">网吧特权</p>
+							<p class="vb">电竞小说</p>
+							<p class="vb">官方社区</p>
+							<p class="vb">视频中心</p>
+							<p class="vb">官方论坛</p>
+							<p class="vb">官方微信</p>
+							<p class="vb">官方微博</p>
+							<p class="vb">玩家创作馆</p>
+							<p class="vb">作者入驻计划</p>
+							<p class="vb">玩家服务</p>
+							<p class="vb">LPL职业联赛</p>
+							<p class="vb">LPL全明星周末</p>
+							<p class="vb">全球总决赛</p>
+							<p class="vb">全明星赛</p>
+							<p class="vb">德玛西亚杯</p>
+							<p class="vb">季中冠军赛</p>
+							<p class="vb">洲际系列赛</p>
+							<p class="vb">全国高校联赛</p>
+							<p class="vb">联系客服</p>
+							<p class="vb">转区系统</p>
+							<p class="vb">封号查询</p>
+							<p class="vb">体验服下载</p>
+							<p class="vb">信誉分系统</p>
+							<p class="vb">服务器状态查询</p>
+							<p class="vb">秩序殿堂</p>
+							<p class="vb">峡谷之巅</p>
+					</div></div>
+					</li>
+					<li>
+						<a href="" class="a1">商城/合作</a>
+						<p><a href="" class="a2">STORE</a></p>
+					</li>
+					<li>
+						<a href="" class="a1">社区互动</a>
+						<p><a href="" class="a2">COMMUNITY</a></p>
+					</li>
+					<li>
+						<a href="" class="a1">赛事官网</a>
+						<p><a href="" class="a2">ESPORTS</a></p>
+					</li>
+					<li>
+						<a href="" class="a1">自助系统</a>
+						<p><a href="" class="a2">SYSTEM</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

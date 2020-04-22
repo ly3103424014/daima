@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.box {
+				width: 900px;
+				margin: 100px auto;
+				border: 1px solid yellowgreen;
+			}
+			
+			.box ul {
+				list-style: none;
+			}
+			
+			.box ul li.br h1 {
+				background-color: yellow;
+			}
+			
+			.box ul li h1 {
+				line-height: 50px;
+				background-color: yellowgreen;
+				padding: 0 400px;
+				border-bottom: 1px solid yellowgreen;
+				color: white;
+				cursor: pointer;
+				position: relative;
+			}
+			
+			.box ul li .content {
+				display: none;
+			}
+			
+			.box ul li.br .content {
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<ul>
+				<li class="br">
+					<h1>生活</h1>
+					<div class="content">
+						<img src="img/生活.jpg" width="900px" />
+					</div>
+				</li>
+				<li>
+					<h1>健康</h1>
+					<div class="content">
+						<img src="img/健康.jpg" width="900px" />
+					</div>
+				</li>
+				<li>
+					<h1>美妆</h1>
+					<div class="content">
+						<img src="img/美妆.jpeg" width="900px" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<script src="js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".box ul li h1").click(function() {
+				$(".content").slideUp();
+				if($(this).siblings(".content").is(":visible")) {
+					$(this).siblings(".content").stop(true).slideUp();
+					$(this).parent().removeClass("br");
+				} else {
+					$(".br").removeClass("br");
+					$(this).parent().addClass("br");
+					$(this).siblings(".content").stop(true).slideDown();
+				}
+			})
+		</script>
+	</body>
+
+</html>

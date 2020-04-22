@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box, p{
+				width: 150px;
+				height: 40px;
+				border-radius:30% ;
+				background-color:black ;
+				float: left;
+				margin: 10px;
+			}
+			.add{
+				background-color:yellow ;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<script src="js源1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("p").mouseenter(function(){
+				$(this).addClass("add").siblings().removeClass("add");
+			})
+		</script>
+	</body>
+</html>

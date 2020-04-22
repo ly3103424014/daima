@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <style type="text/css">
+	    	.choose{
+	    	background-color:yellowgreen ;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><input type="checkbox" name="" id="" value="" />你好</li>
+				<li><input type="checkbox" name="" id="" value="" />我不好</li>
+				<li><input type="checkbox" name="" id="" value="" />怎么不好了</li>
+				<li><input type="checkbox" name="" id="" value="" />就是不好</li>
+			</ul>
+		</div>
+		<script src="js源1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("input").click(function(){
+				if($(this)[0].checked) {
+						$(this).parent().addClass("choose")
+				}else{
+					$(this).parent().removeClass("choose")
+				}
+				})
+		</script>
+	</body>
+</html>

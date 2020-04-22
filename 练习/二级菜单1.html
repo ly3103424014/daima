@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			ul{
+				width:800px;
+				height:100px;
+				margin:20px auto;
+				border:1px solid black;
+				list-style:none;
+			}
+			ul li{
+				width:100px;
+				height:100px;
+				margin-right:20px;
+				
+				float:left;
+				text-align:center;
+				line-height: 100px;
+				background-color:blueviolet;
+			}
+			ul li a{
+				text-decoration: none;
+				height:100px;
+				color:white;
+				display:block;
+			}
+			ul li a:hover{
+				background-color:red;
+			}
+			.one{
+				width:100px;
+				display:none;
+				background-color:yellow;
+				overflow: hidden;
+			}
+			.one p{
+				line-height:40px;
+				border:1px dashed black;
+				color:green;
+			}
+			.one p:hover{
+				background-color:red;
+			}
+			ul li:hover .one{
+				display:block;
+			}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+			<a href="#">一级菜单</a>
+			<div class="one">
+			<p>二级标题</p>
+			<p>二级标题</p>
+			<p>二级标题</p>
+			<p>二级标题</p>
+			<p>二级标题</p>
+			</div>
+			</li>
+			
+			<li>
+			<a href="#">一级菜单</a>
+			</li>
+			<li>
+			<a href="#">一级菜单</a>
+			</li>
+			<li>
+			<a href="#">一级菜单</a>
+			</li>
+			<li>
+			<a href="#">一级菜单</a>
+			</li>
+			
+		</ul>
+	</body>
+</html>

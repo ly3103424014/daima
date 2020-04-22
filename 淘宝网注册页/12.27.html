@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			题目1：
+//               求1! + 2! + 3! + 4! + …… + 10!的和
+//               叹号表示阶乘，如4! = 1 * 2 * 3 * 4
+//          function jiecheng(z){ 
+//          	     var s=1;
+//          	for(i=1;i<=z;i++){
+//          		s*=i;
+//          	}
+//          	return s;
+//          }
+//             var sum=0;
+//             for(var a=1;a<=10;a++){
+//             	     sum+=jiecheng(a)
+//             	     
+//             }
+//             console.log(sum);
+//           求一个三位数，该三位数等与其每位数字的阶乘之和。
+//             function jiecheng(z){
+//             	     var s=1;
+//             	     for(i=1;i<=z;i++){
+//             	     	s*=i;
+//             	     }
+//             	     return s;
+//              }
+//                  for(var s=100;s<1000;s++){
+//             	        var gewei=parseInt(s%10);
+//				        var shiwei=parseInt(s/10%10);
+//				        var baiwei=parseInt(s/100);
+//				        if(jiecheng(gewei)+jiecheng(shiwei)+jiecheng(baiwei)==s){
+//				        	console.log(s+"是考拉数");
+//				        }
+//				}
+//				如果整数A 的全部约数（包括1，不包括A 本身）之和等于B，且整数B 的全部约数
+//				（包括1，不包括B 本身）之和等于A，则称整数A和B是一对亲密数。
+//				求3000 以内的全部亲密数。
+//              function yueshu(a){
+//              	var sum=0;
+//              	for(var i=1;i<a;i++){
+//              		if(a%i==0){
+//              			sum+=i;
+//              		}
+//              	}
+//              	return sum;
+//              }
+//              for(var b=1;b<3000;b++){
+//              	var aa=yueshu(b);
+//              	if(yueshu(aa)==b&&yueshu(b)==aa&&aa>b){
+//              		console.log(aa+"与"+b+"亲密数")
+//              	}
+//              }
+//			    编写一个函数rev用于将一个整数前后倒置。
+//				例如rev(12345)将返回54321，rev(123)将返回321
+//				整数位数不限制，多少位都行。
+//				function rev(a){
+//					var b=0;
+//					while(a){
+//						b=b*10+a%10;
+//						a=parseInt(a/10);
+//					}
+//					return b;
+//				}
+//				alert(rev(123));
+//             闭包
+//				function outer(){
+//					var a = 333;
+//					function inner(){
+//						console.log(a);
+//					}
+//					return inner;
+//				}
+//				var inner =outer();
+//				inner();
+
+		</script>
+	</body>
+</html>

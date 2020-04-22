@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<title>
+			蘑菇商城
+		</title>
+		<link rel="icon" type="text/css" href="img/48.png" />
+	</head>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		
+		.container {
+			width: 90%;
+			height: 100%;
+			position: relative;
+			background: #fff;
+		}
+		
+		.top {
+			height: 33px;
+			background: #f8f8f8;
+			/*border-bottom: 1px solid #F0F0F0;*/
+		}
+		
+		.top .right {
+			width: 380px;
+			height: 32.8px;
+			/*border: 1px solid black;*/
+			float: right;
+			color: #999;
+		}
+		
+		.right img {
+			width: 15px;
+			height: 15px;
+			margin-right: -2px;
+			background-repeat: no-repeat;
+			margin-top: -5px;
+		}
+		
+		.right span {
+			font-size: 15px;
+			line-height: 32.8px;
+		}
+		
+		.right a {
+			text-decoration: none;
+		}
+		
+		.shangcheng::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.denglu::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.dingdan::before {
+			content: "|";
+			margin: 0 20px;
+			font-weight: 300;
+		}
+		
+		.container .tu {
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+		
+		.tu1 {
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+		
+		.normal-search-content {
+			width: 522px;
+			height: 50px;
+			border: 1px solid deeppink;
+			float: left;
+			margin: 20px 40px;
+		}
+		
+		.top_nav_form {
+			border-radius: 6px;
+			background: #F7F7F7;
+			width: 100%
+		}
+		
+		.ts_txt {
+			float: left;
+			width: 462px;
+			height: 48px;
+			line-height: 48px;
+			border: none;
+			font-size: 14px;
+			background: #f7f7f7;
+			color: #666;
+			padding: 0 15px;
+			outline: none;
+		}
+		
+		.ts_btn {
+			float: right;
+			width: 58px;
+			height: 48px;
+			border: none;
+			cursor: pointer;
+			border-radius: 0 5px 5px 0;
+			background-image: url(img/jkl.png);
+			background-repeat: no-repeat;
+			background-size: 89%;
+			outline: none;
+			background-color: white;
+		}
+		
+		.row {
+			width: 310px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			float: right;
+			margin-top: 20px;
+		}
+		
+		.row .col-md-1 {
+			width: 100px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			line-height: 50px;
+		}
+		
+		.row .col-md-1 img {
+			width: 24px;
+			height: 24px;
+		}
+		
+		.row .col-md-1 a {
+			text-decoration: none;
+		}
+		
+		.g-header {
+			width: 100%;
+			height: 72px;
+			border: 1px solid black;
+		}
+		
+		.md_process_wrap {
+			width: 494px;
+			height: 42px;
+			/*border: 1px solid black;*/
+			float: right;
+			position: relative;
+		}
+		
+		.md_process_sd {
+			width: 120px;
+			height: 23px;
+			/*border: 1px solid black;*/
+		}
+		
+		.md_process_sd img {
+			width: 120px;
+			height: 23px;
+			transform: rotate(180deg);
+		}
+		
+		.md_process_i {
+			position: absolute;
+			top: 1px;
+			width: 23px;
+			height: 23px;
+			font: normal 14px/23px helvetica, tahoma, arial, sans-serif;
+			color: #fff;
+			text-align: center;
+			left: -2px;
+		}
+		
+		.md_process_tip {
+			position: absolute;
+			top: 22px;
+			width: 100px;
+			height: 20px;
+			left: 0px;
+			/*margin-left: 0px;*/
+			font: normal 12px/20px helvetica, tahoma, arial, sans-serif;
+			color: #f46;
+		}
+		
+		.h1 {
+			width: 120px;
+			height: 23px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: -20px;
+			left: 119px;
+		}
+		
+		.h1 img {
+			width: 120px;
+			height: 23px;
+			margin-top: -22px;
+		}
+		
+		.md_process_2 {
+			position: absolute;
+			top: 0px;
+			width: 23px;
+			height: 23px;
+			font: normal 14px/23px helvetica, tahoma, arial, sans-serif;
+			color: #fff;
+			text-align: center;
+			left: 99px;
+		}
+		
+		.md_process_tip1 {
+			position: absolute;
+			top: 22px;
+			width: 100px;
+			height: 20px;
+			left: 211px;
+			/*margin-left: 0px;*/
+			font: normal 12px/20px helvetica, tahoma, arial, sans-serif;
+			color: #f46;
+		}
+		
+		.h2 {
+			width: 120px;
+			height: 23px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: -20px;
+			left: 239px;
+		}
+		
+		.h2 img {
+			width: 120px;
+			height: 23px;
+			margin-top: -16px;
+		}
+		
+		.md_process_3 {
+			position: absolute;
+			top: 0px;
+			width: 23px;
+			height: 23px;
+			font: normal 14px/23px helvetica, tahoma, arial, sans-serif;
+			color: #fff;
+			text-align: center;
+			left: 99px;
+		}
+		
+		.md_process_tip2 {
+			position: absolute;
+			top: 22px;
+			width: 100px;
+			height: 20px;
+			left: 343px;
+			/*margin-left: 0px;*/
+			font: normal 12px/20px helvetica, tahoma, arial, sans-serif;
+			color: #f46;
+		}
+		
+		.h3 {
+			width: 120px;
+			height: 23px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: -20px;
+			left: 359px;
+		}
+		
+		.h3 img {
+			width: 120px;
+			height: 23px;
+			margin-top: -10px;
+		}
+		
+		.md_process_4 {
+			position: absolute;
+			top: 0px;
+			width: 23px;
+			height: 23px;
+			font: normal 14px/23px helvetica, tahoma, arial, sans-serif;
+			color: #fff;
+			text-align: center;
+			left: 99px;
+		}
+		
+		.md_process_tip4 {
+			position: absolute;
+			top: 22px;
+			width: 100px;
+			height: 20px;
+			left: 463px;
+			/*margin-left: 0px;*/
+			font: normal 12px/20px helvetica, tahoma, arial, sans-serif;
+			color: #f46;
+		}
+		
+		.foot_J_siteFooter {
+			width: 100%;
+			border: 1px solid black;
+			position: relative;
+		}
+		
+		.foot_J_siteFooter img {
+			width: 100%;
+		}
+		
+		.mgj_footer_helper {
+			width: 100%;
+			height: 152px;
+			border: 1px solid black;
+			position: absolute;
+			top: 0px;
+		}
+		
+		.mgj_footer_helper_mod {
+			float: left;
+			width: 25%;
+			height: 152px;
+			/*border: 1px solid black;*/
+		}
+		
+		.mgj_footer_helper_title {
+			width: 120px;
+			height: 25px;
+			/*border: 1px solid black;*/
+			color: #fff;
+		}
+		
+		.mgj_footer_helper_title_border {
+			width: 30px;
+			height: 1px;
+			background: #fff;
+			margin-top: 4px;
+		}
+		
+		.mgj_footer_helper_item {
+			font-size: 12px;
+			width: 80px;
+			height: 17px;
+			line-height: 17px;
+			font-weight: 300;
+			list-style: none;
+			margin-top: 10px;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+		
+		.mgj_footer_helper_item a {
+			color: #fff;
+			font-size: 12px;
+			line-height: 17px;
+			font-weight: 300;
+			margin-top: 20px;
+		}
+		
+		.mgj_footer_mgjinfo_list {
+			width: 100%;
+			height: 20px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 182px;
+			left: 0;
+			list-style: none;
+		}
+		
+		.mgj_footer_mgjinfo_item {
+			width: 78px;
+			height: 20px;
+			/*border: 1px solid black;*/
+			display: inline-block;
+			height: 20px;
+			line-height: 20px;
+			font-weight: 300;
+			font-size: 12px;
+			margin-left: 30px;
+		}
+		
+		.mgj_footer_mgjinfo_list a {
+			color: #fff;
+		}
+		
+		.mgj_footer_hostname {
+			width: 100%;
+			height: 20px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 252px;
+		}
+		
+		.mgj_footer_hostname span {
+			font-size: 12px;
+			color: #fff;
+			font-weight: 100;
+			text-align: center;
+			margin-left: 37%;
+		}
+		
+		.mgj_footer_copyright {
+			width: 100%;
+			height: 80px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 290px;
+		}
+		
+		.mgj_footer_copyright_container {
+			width: 100%;
+			height: 80px;
+			/*border: 1px solid black;*/
+		}
+		
+		.mgj_footer_copyright_span {
+			color: #fff;
+			font-size: 12px;
+			margin-left: 40px;
+			line-height: 80px;
+		}
+		b{
+			color: #fff;
+			margin-left: 20px;
+		}
+		.zhongkuang{
+			width:100%;
+			height: 500px;
+			border: 1px solid black;
+			position: relative;
+			
+		}
+		.cart_empty_icon {
+			width: 100px;
+			height:80px;
+			/*border: 1px solid black;*/
+			background-image: url(img/00.png);
+			background-repeat: no-repeat;
+			background-position: -188px -120px;
+			position: absolute;
+			top: 100px;
+			left: 33%;
+		}
+		.e1{
+			width: 50%;
+			height:40px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 100px;
+			left: 42%;
+		}
+		.e2{
+			width: 50%;
+			height:40px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 140px;
+			left: 42%;
+		}
+		.e2 a{
+			text-decoration: none;
+		}
+		.e2 a:hover{
+			color: deeppink;
+		}
+		body {
+			padding-top: 70px;
+		}
+	</style>
+
+	<body>
+		<div class="container">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<!--<div class="container">
+				
+			</div>-->
+
+				<div class="top">
+					<div class="right">
+						<a href="首页.html">
+							<i><img src="img/首页.png"/></i>
+							<span id="">
+							首页
+						</span>
+						</a>
+						<a href="" class="shangcheng">
+							<i><img src="img/商城.png"/></i>
+							<span id="">
+							商城
+						</span>
+						</a>
+						<a href="denglv.html" class="denglu">
+							<i><img src="img/登录.png"/></i>
+							<span id="">
+							登录
+						</span>
+						</a>
+						<a href="" class="dingdan">
+							<span id="">
+							我的订单
+						</span>
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<img src="img/190102_088f4i166l4gkl08k297h5kk8690i_260x200.png" class="tu" />
+				<img src="img/5c05314cNf894bdef.jpg" class="tu1" />
+				<!--搜索框-->
+				<div class="normal-search-content">
+					<form action="" method="get" class="top_nav_form">
+						<input type="text" name="" id="" value="短袖" class="ts_txt" />
+						<input type="submit" value="" class="ts_btn" />
+					</form>
+				</div>
+				<div class="row">
+					<div class="col-md-1">
+						<a href=""><img src="img/消息.png" />消息</a>
+					</div>
+					<div class="col-md-1">
+						<a href=""><img src="img/收藏.png" />收藏</a>
+					</div>
+					<div class="col-md-1">
+						<a href=""><img src="img/购物车.png" />购物车</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="container">
+				<div class="g-header clearfix">
+					<div class="md_process_wrap md_process_step1_5">
+						<div class="md_process_sd">
+							<img src="img/红杠.png" />
+							<i class="md_process_i md_process_i1"> 1	
+							</i>
+							<span class="md_process_tip">购物车</span>
+							<div class="h1">
+								<img src="img/杠.png" />
+								<i class="md_process_2 "> 2	
+							</i>
+							</div>
+							<span class="md_process_tip1">确认订单</span>
+							<div class="h2">
+								<img src="img/杠.png" />
+								<i class="md_process_3 "> 3	
+							</i>
+							</div>
+							<span class="md_process_tip2">支付</span>
+							<div class="h3">
+								<img src="img/杠.png" />
+								<i class="md_process_4 "> 4	
+							</i>
+							</div>
+							<span class="md_process_tip4">完成</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="zhongkuang">
+					<div class="cart_empty_icon {">						
+					</div>
+					<div class="e1">
+						您的购物车还是空的，快去挑选商品吧。
+					</div>
+					<div class="e2">
+						去<a href="首页.html">商城</a>首页看看吧
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="foot_J_siteFooter">
+					<img src="img/女孩.jpg" />
+					<div class="mgj_footer_helper">
+						<div class="mgj_footer_helper_mod">
+							<div class="mgj_footer_helper_title">
+								新手帮助
+								<p class="mgj_footer_helper_title_border"></p>
+							</div>
+							<ul>
+								<li class="mgj_footer_helper_item">
+									<a href="">常见问题</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">自助服务</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">联系客服</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">意见反馈</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mgj_footer_helper_mod">
+							<div class="mgj_footer_helper_title">
+								权益保障
+								<p class="mgj_footer_helper_title_border"></p>
+							</div>
+							<ul>
+								<li class="mgj_footer_helper_item">
+									<a href="">全国包邮</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">7天无理由退货</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">退货运费补贴</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">限时发货</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mgj_footer_helper_mod">
+							<div class="mgj_footer_helper_title">
+								支付方式
+								<p class="mgj_footer_helper_title_border"></p>
+							</div>
+							<ul>
+								<li class="mgj_footer_helper_item">
+									<a href="">微信支付</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">支付宝</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">白付美支付</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mgj_footer_helper_mod">
+							<div class="mgj_footer_helper_title">
+								移动客户端下载
+								<p class="mgj_footer_helper_title_border"></p>
+							</div>
+							<ul>
+								<li class="mgj_footer_helper_item">
+									<a href="">蘑菇街</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">美丽说</a>
+								</li>
+								<li class="mgj_footer_helper_item">
+									<a href="">uni引力</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="mgj_footer_mgjinfo_list">
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">关于我们</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">招聘信息</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">联系我们</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">商家入住</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">商家后台</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">商家社区</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">规则中心</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">规则众议院</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">有害信息举报</a>
+						</li>
+						<li class="mgj_footer_mgjinfo_item">
+							<a href="">用户隐私保护</a>
+						</li>
+					</ul>
+					<div class="mgj_footer_hostname">
+						<span id="">
+                      	©2019 Mogu.com 杭州卷瓜网络有限公司
+                      </span>
+					</div>
+					<div class="mgj_footer_copyright">
+						<p class="mgj_footer_copyright_container">
+							<span class="mgj_footer_copyright_span">
+                         		营业执照:913301065526808764
+                         </span>
+                         	<b class="mgj_footer_b"> | </b>
+                         	<span class="mgj_footer_copyright_span">
+                         		营业性演出许可证
+                         	</span>
+                         	<b class="mgj_footer_b"> | </b>
+                         	<span class="mgj_footer_copyright_span">
+                         		网络文化经营许可证
+                         	</span>
+                         	<b class="mgj_footer_b"> | </b>
+                         	<span class="mgj_footer_copyright_span">
+                         		网络信息服务信用承诺书
+                         	</span>
+                         	<b class="mgj_footer_b"> | </b>
+                         	<span class="mgj_footer_copyright_span">
+                         		增值电信业务经营许可证：浙B2-20110349
+                         	</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

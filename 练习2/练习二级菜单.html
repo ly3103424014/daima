@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{}
+			.box{
+				width:900px;
+				height:150px;
+				border:1px solid black;
+				margin:50px auto;
+				
+			}
+			ul li{
+				width:150px;
+				height:100px;
+				border:1px solid black;
+				list-style: none;
+				float:left;
+				text-align: center;
+				line-height: 100px;
+				background-color:red;
+				margin-right: 10px;
+			}
+			ul li a{
+				text-decoration: none;
+				color:white;
+				display:block;
+				height:100px;	
+			}
+			ul li a:hover{
+				background-color:blue;
+			}
+			.box1{
+				width:100px;
+				overflow: hidden;
+				display:none;
+				background-color: yellow;
+			}
+			.box1 p{
+				line-height:40px;
+				border-bottom: 1px dashed white;
+				cursor:pointer;
+			}
+			.box1 p:hover{
+				background-color:blue;
+			}
+			ul li:hover .box1
+			{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><a href="">导航一</a>
+					<div class="box1">
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+						<p>1</p>
+					</div>
+				</li>
+				<li><a href="">导航二</a></li>
+				<li><a href="">导航三</a></li>
+				<li><a href="">导航四</a></li>
+				<li><a href="">导航五</a></li>
+				
+			</ul>
+			
+			
+		</div>
+	</body>
+</html>

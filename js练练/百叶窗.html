@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+				
+			}
+			.box{
+				width: 1200px;
+				height: 600px;
+				border: 1px solid black;
+				margin: 50px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.box ul{
+				list-style: none;
+			}
+			.box ul li{
+				position:absolute;
+				top: 0;
+			}
+			.box ul li.no0{left: 0px;}
+			.box ul li.no1{left: 200px;}
+			.box ul li.no2{left: 400px;}
+			.box ul li.no3{left: 600px;}
+			.box ul li.no4{left: 800px;}
+			.box ul li.no5{left: 1000px;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li class="no0"><img src="img/1.jpg" width="1200px" height="600px"/></li>
+				<li class="no1" style="left: 200px;"><img src="img/82.jpg" width="1200px" height="600px"/></li>
+				<li class="no2" style="left: 400px;"><img src="img/8.jpg" width="1200px" height="600px"/></li>
+				<li class="no3" style="left: 600px;"><img src="img/a1.jpg" width="1200px" height="600px"></li>
+				<li class="no4" style="left: 800px;"><img src="img/l.jpg" width="1200px" height="600px"></li>
+				<li class="no5" style="left: 1000px;"><img src="img/45.jpg" width="1200px" height="600px"></li>
+			</ul>
+		</div>
+		<script src="js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".no0").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":900},1000)
+				$(".no2").animate({"left":960},1000)
+				$(".no3").animate({"left":1020},1000)
+				$(".no4").animate({"left":1080},1000)
+				$(".no5").animate({"left":1140},1000)
+			})
+			$(".no1").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":60},1000)
+				$(".no2").animate({"left":960},1000)
+				$(".no3").animate({"left":1020},1000)
+				$(".no4").animate({"left":1080},1000)
+				$(".no5").animate({"left":1140},1000)
+			})
+			$(".no2").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":60},1000)
+				$(".no2").animate({"left":120},1000)
+				$(".no3").animate({"left":1020},1000)
+				$(".no4").animate({"left":1080},1000)
+				$(".no5").animate({"left":1140},1000)
+			})
+			$(".no3").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":60},1000)
+				$(".no2").animate({"left":120},1000)
+				$(".no3").animate({"left":180},1000)
+				$(".no4").animate({"left":1080},1000)
+				$(".no5").animate({"left":1140},1000)
+			})
+			$(".no4").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":60},1000)
+				$(".no2").animate({"left":120},1000)
+				$(".no3").animate({"left":180},1000)
+				$(".no4").animate({"left":240},1000)
+				$(".no5").animate({"left":1140},1000)
+			})
+			$(".no5").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":60},1000)
+				$(".no2").animate({"left":120},1000)
+				$(".no3").animate({"left":180},1000)
+				$(".no4").animate({"left":240},1000)
+				$(".no5").animate({"left":300},1000)
+			})
+			$(".box").mouseleave(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":200},1000)
+				$(".no2").animate({"left":400},1000)
+				$(".no3").animate({"left":600},1000)
+				$(".no4").animate({"left":800},1000)
+				$(".no5").animate({"left":1000},1000)
+			})
+			
+			
+		</script>
+	</body>
+</html>

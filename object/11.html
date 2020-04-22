@@ -1,0 +1,3094 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>msy</title>
+		<link rel="icon" type="images/x-icon" href="img/15865151327615.png" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+		<script src="js/animate-2.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.box {
+				width: 1000px;
+				height: 420px;
+				border: 1px solid #000;
+				/*margin-top:91px;
+				margin-left:0px;*/
+				position: relative;
+				overflow: hidden;
+				/*z-index:-1;*/
+			}
+			
+			.box ul {
+				list-style: none;
+			}
+			
+			.box ul li {
+				position: absolute;
+				top: 0;
+			}
+			
+			.box ul li img {
+				width: 767px;
+				height: 420px;
+			}
+			
+			.box ul li:nth-child(1) {
+				left: 0;
+			}
+			
+			.box ul li:nth-child(2) {
+				left: 160px;
+			}
+			
+			.box ul li:nth-child(3) {
+				left: 320px;
+			}
+			
+			.box ul li:nth-child(4) {
+				left: 480px;
+			}
+			
+			.box ul li:nth-child(5) {
+				left: 640px;
+			}
+			
+			@media (max-width: 1000px) {
+				.somecontent .f0{
+					height:170px;
+				}
+				.somecontent .f0 ul li{
+					margin-left:42px;
+					width:94px;
+					height:50px;
+					font-size:35px;
+					
+				}
+				.pppp .floor{
+					height:1191px;
+				}
+				.floor .rrr1{
+					height:1150px;
+				}
+				.floor .rrr2{
+					height:1150px;
+				}
+				.floor .rrr3{
+					height:1150px;
+				}
+				.floor .rrr4{
+					height:1150px;
+				}
+				.floor .rrr5{
+					height:1150px;
+				}
+				.floor .rrr6{
+					height:1150px;
+				}
+				.floor .rrr7{
+					height:1150px;
+				}
+				.g4 .g1{
+					height: 465px;
+				}
+				.g4 .g1 img{
+					height: 390px;
+				}
+				.ppp .pp{
+					height:100px;
+				}
+				.item .box {
+					margin-top: 108px;
+				}
+				.item #a2 {
+					width: 100%;
+					height: 200px;
+					background-color: darkred;
+					position: fixed;
+					overflow: hidden;
+					border-radius: 0;
+					top: 0;
+					z-index: 5;
+				}
+				.item #cuu {
+					margin: auto;
+					width: 100%;
+					height: 200px;
+					background-color: darkred;
+					position: fixed;
+					overflow: hidden;
+					border-radius: 0;
+					top: 0;
+					z-index: 5;
+					/*margin-top:108px;*/
+				}
+				.somecontent .f0 {
+					margin-top: 206px;
+				}
+				.item #a3 {
+					display: none;
+				}
+				.item #cuuu {
+					margin-top: 60px;
+				}
+				.item #img01 {
+					margin-left: 5%;
+					margin-top: 2%;
+					width: 160px;
+					height: 160px;
+				}
+				.item #a6 {
+					width: 550px;
+					height: 124px;
+					top: 39px;
+					left: 25%;
+				}
+				.item #a6 input {
+					width: 371px;
+					height: 121px;
+					font-size: 50px;
+				}
+				.item #a7:last-child {
+					width: 177px;
+					height: 121px;
+					font-size: 50px;
+					line-height: 121px;
+					text-align: center;
+					cursor: pointer;
+				}
+				.d4 .leftNav {
+					position: fixed;
+					top: 11%;
+					right: 0;
+					width: 100%;
+					height: 184px;
+					display: none;
+					border-bottom-left-radius: 0%;
+					border-bottom-right-radius: 0%;
+					border-top-right-radius: 0%;
+					border-top-left-radius: 0%;
+					overflow: hidden;
+					border: 3px solid black;
+				}
+				.d4 .leftNav ul {
+					overflow: auto;
+				}
+				.d4 .leftNav ul li {
+					width: 142px;
+					height: 180px;
+					background-color: #ccc;
+					float: left;
+					text-align: center;
+				}
+				.d4 .leftNav ul li a {
+					margin-top: 50px;
+					margin-left: 28px;
+					/* display: block; */
+					width: 41px;
+					height: 60px;
+					line-height: 84px;
+					text-align: center;
+					text-decoration: none;
+					font-size: 78px;
+				}
+				.d4 .leftNav ul li a:last-child {
+					margin-top: 5px;
+					margin-left: 28px;
+				}
+			}
+			
+			#c1 {
+				width: 120px;
+				height: 40px;
+				/*border:1px red solid;*/
+				margin: 10px;
+				position: absolute;
+				left: 28%;
+			}
+			
+			#a3 {
+				width: 1000px;
+				height: 60px;
+				/*border:1px black solid;*/
+				margin: auto;
+			}
+			
+			#cuuu {
+				margin-top: 105px;
+			}
+			
+			#a2 {
+				width: 100%;
+				height: 100px;
+				background-color: darkred;
+				position: relative;
+				overflow: hidden;
+				/*border-radius: 50%;*/
+			}
+			
+			#cuu {
+				position: fixed;
+				top: 0px;
+				z-index: 2;
+				width: 100%;
+				height: 100px;
+				overflow: hidden;
+				background-color: darkred;
+				/*margin-bottom: 60px;*/
+			}
+			
+			#a4 {
+				position: absolute;
+				right: 31%;
+				top: 27px;
+				font-size: 13px;
+				background-color: darkred;
+				padding: 3px;
+				color: white;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			#a4 a {
+				width: 34px;
+				height: 24px;
+			}
+			
+			#a4:hover {
+				background-color: white;
+				border: 1px darkred solid;
+				color: darkred;
+			}
+			
+			#a5 {
+				position: absolute;
+				right: 27%;
+				top: 27px;
+				font-size: 13px;
+				background-color: darkred;
+				padding: 3px;
+				color: white;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+			#a5:hover {
+				background-color: white;
+				border: 1px darkred solid;
+				color: darkred;
+			}
+			
+			#img01 {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				margin-left: 25%;
+				margin-top: 10px;
+			}
+			
+			#a6 {
+				width: 300px;
+				height: 39px;
+				border: 1px white solid;
+				position: absolute;
+				top: 30px;
+				left: 43%;
+			}
+			
+			#a6 input {
+				width: 235px;
+				height: 37px;
+			}
+			
+			#a7:last-child {
+				width: 65px;
+				height: 41px;
+				position: absolute;
+				top: -2px;
+				right: -1px;
+				color: white;
+				line-height: 40px;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			#a7:hover {
+				background-color: white;
+				color: black;
+				border: 2px darkred solid;
+			}
+			
+			#e1 {
+				font-size: 20px;
+				font-weight: bold;
+				margin-bottom: 3px;
+				color: darkred;
+			}
+			
+			#e2 {
+				font-size: 10px;
+				color: darkred;
+			}
+			
+			.somecontent {
+				width: 1000px;
+				height: 512px;
+				margin: auto;
+				/*background-color: #ccc;*/
+				/*border: 1px black solid;*/
+			}
+			.somecontent1{
+				width: 1000px;
+				height: 271px;
+				margin: auto;
+				/*background-color: #ccc;*/
+				/*border: 1px black solid;*/
+				background:url(img/QQ图片20200419161020.png);
+				background-repeat: no-repeat;
+				background-position-y:45px ;}
+			.f0 {
+				width: 100%;
+				height: 71px;
+				/*border:1px solid black;*/
+				margin: 0px;
+			}
+			
+			.f0 ul {
+				list-style: none;
+			}
+			
+			.f0 ul li {
+				margin-top: 18px;
+				margin-left: 8px;
+				float: left;
+				/*border:1px solid black;*/
+				width: 62px;
+				height: 26px;
+				border-bottom: 3px red solid;
+				text-align: center;
+				font-weight: bold;
+				cursor: pointer;
+			}
+			
+			.f0 ul li:hover {
+				border-bottom: 3px antiquewhite solid;
+			}
+			
+			.f0 ul li a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			#a111 {
+				margin-top: 20px;
+			}
+			
+			.floor {
+				width: 1000px;
+				margin: auto;
+				height: 427px;
+				margin-bottom: 30px;
+				background-color: white;
+				/*border: 1px black solid;*/
+				overflow: hidden;
+				position:relative;
+			}
+			
+			.f1 {
+				/*height: 452px;*/
+				margin-top: 30px;
+			}
+			
+			
+			
+			.f1 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+			.f2 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+			.f3 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+			.f4 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+			.f5 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+			.f6 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+.f7 ul {
+				list-style: none;
+				margin-top: -100px;
+				margin-left: 150px;
+			}
+			
+			.f1 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+			.f2 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+			.f3 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+			.f4 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+			.f5 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+			.f6 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+.f7 ul li {
+				
+				width: 850px;
+				height: 500px;	
+			}
+			
+			
+			.leftNav {
+				position: fixed;
+				top: 40%;
+				right: 8%;
+				width: 60px;
+				display: none;
+				border-bottom-left-radius: 30%;
+				border-bottom-right-radius: 30%;
+				border-top-right-radius: 30%;
+				border-top-left-radius: 30%;
+				overflow: hidden;
+				z-index: 5;
+			}
+			
+			.leftNav ul {
+				list-style: none;
+			}
+			
+			.leftNav ul li {
+				width: 60px;
+				height: 60px;
+				background-color: #ccc;
+			}
+			
+			.leftNav ul li a {
+				/*display: block;*/
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			
+			.leftNav ul li a.number {
+				display: block;
+			}
+			
+			.leftNav ul li a.chinses {
+				display: none;
+				color: white;
+			}
+			
+			.leftNav ul li.cur a.number {
+				display: none;
+			}
+			
+			.leftNav ul li.cur a.chinses {
+				display: block;
+			}
+			
+			.leftNav ul li.cur {
+				background-color: darkred;
+			}
+			
+			.l1 {
+				width: 145px;
+				height: 145px;
+				margin-top: 0px;
+				margin-left: 4px;
+				/*align="absmiddle"*/
+			}.l11 {
+				width: 145px;
+				height: 145px;
+				margin-top: 0px;
+				margin-left: 4px;
+				/*align="absmiddle"*/
+			}
+			
+			.l2 {
+				font-size: 25px;
+				font-family: FangSong;
+				font-weight: bold;
+				display: inline-block;
+				width: 15px;
+				height: 77px;
+				background-color: #FFFF99;
+				margin-left: 85px;
+			}
+			
+			body {
+				background-color: #F5F5F5;
+			}
+			
+			.g1 {
+				position: relative;
+				width: 90%;
+				height: 260px;
+				border-radius: 5px;
+				box-shadow: 6px 6px 12px #ccc;
+				margin: 20px;
+				text-align: center;
+			}
+			
+			.g1 img {
+				width: 94%;
+				height: 192px;
+				/*margin-left:6px;*/
+				margin-top: 11px;
+			}
+			
+			.g2 {
+				line-height: 4px;
+				font-size: 18px;
+				color: black;
+				font-weight: bold;
+				margin: 14px 0px 0 0px;
+			}
+			
+			.g3 {
+				line-height: 20px;
+				font-size: 18px;
+				color: red;
+				font-weight: bold;
+				margin: 13px 0px 0 0px;
+			}
+			
+			.mask {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255, 255, 255, 0.5);
+				display: none;
+				border: 1px solid red;
+				cursor: pointer;
+			}
+			
+			.tiaozhuan {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.g1:hover .mask {
+				display: block;
+			}
+			.cur1{
+				display:none;
+			}
+			.pageNav{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav ul li.cur{
+			background-color: brown;
+		}
+		.pageNav1{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav1 ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav1 ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav1 ul li.cur{
+			background-color: brown;
+		}
+		.pageNav2{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav2 ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav2 ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav2 ul li.cur{
+			background-color: brown;
+		}
+		.pageNav3{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav3 ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav3 ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav3 ul li.cur{
+			background-color: brown;
+		}
+		.pageNav4{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav4 ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav4 ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav4 ul li.cur{
+			background-color: brown;
+		}
+		.pageNav5{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav5 ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav5 ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav5 ul li.cur{
+			background-color: brown;
+		}
+		.pageNav6{
+				width:300px;
+				height:50px;
+				/*background-color:red;*/
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:382px;
+			}
+			.pageNav6 ul{
+				list-style: none;
+				width:280px;
+				height:45px;
+			overflow: hidden;
+				/*border:1px black solid;*/
+				position: absolute;
+				bottom: 0px;
+				left:-89px;
+			}
+			.pageNav6 ul li{
+			float: left;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+			border-radius: 50%;
+			border: 0px solid #ccc;
+			background: lavender;
+			font-size: 16px;
+			font-weight: bold;
+			color:white;
+		}
+		.pageNav6 ul li.cur{
+			background-color: brown;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="u1" class="item">
+
+			<div id="a3">
+				<div id="c1">
+					<p id="e1">&nbsp;&nbsp;&nbsp; m s y</p>
+					<p id="e2">给你不一样的购物体验</p>
+				</div>
+				<div id="a4">
+					登录
+					<a href="#"></a>
+				</div>
+				<div id="a5">
+					注册
+				</div>
+			</div>
+			<div id="a2">
+
+				<img src="img/15865151327615.png" id="img01" />
+				<div id="a6">
+					<p><input type="text" name="" id="" value=" 输点什么吧" font-size="70px" /></p>
+					<p id="a7">搜索</p>
+
+				</div>
+			</div>
+		</div>
+		<div class="somecontent" id="a33">
+
+			<div class="f0" id="f0">
+				<ul id="a111">
+
+				</ul>
+
+			</div>
+			
+			<div class="box" id="box">
+				<ul class='boxContent'>
+
+				</ul>
+			</div>
+		</div>
+		<div class="d4">
+
+			<div class="leftNav" id="leftNav">
+				<ul>
+					<li class="a121">
+						<a href="javascript:;" class="number">1F</a>
+						<!--<a href="javascript:;" class="chinses" class="a121"></a>-->
+					</li>
+					<li class="a122">
+						<a href="javascript:;" class="number">2F</a>
+						<!--<a href="javascript:;" class="chinses"">2</a>-->
+					</li>
+					<li class="a123">
+						<a href="javascript:;" class="number">3F</a>
+						<!--<a href="javascript:;" class="chinses">3</a>-->
+					</li>
+					<li class="a124">
+						<a href="javascript:;" class="number">4F</a>
+						<!--<a href="javascript:;" class="chinses"></a>-->
+					</li>
+					<li class="a125">
+						<a href="javascript:;" class="number">5F</a>
+						<!--<a href="javascript:;" class="chinses"></a>-->
+					</li>
+					<li class="a126">
+						<a href="javascript:;" class="number">6F</a>
+						<!--<a href="javascript:;" class="chinses"></a>-->
+					</li>
+					<li class="a127">
+						<a href="javascript:;" class="number">7F</a>
+						<!--<a href="javascript:;" class="chinses"></a>-->
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ppp">
+			<div class="pp">
+			
+		</div>
+		</div>
+		<!--<div class="pppp">-->
+			<div class="pppp">
+			
+		<div class="floor f1">
+			<div class="l1">
+
+				<img src=""  class="l11 ll11">
+				<span class="l2">
+					
+				</span>
+			</div>
+			<ul>
+				<li  class="rrr1">
+					
+				</li>
+				<li  class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+				<li class="rrr1"></li>
+			</ul><div class="pageNav">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div></div>
+		</div><div class="pppp">
+		<div class="floor f2 "><div class="l1">
+
+				<img src=""  class="l11 ll12">
+				<span class="l2">
+					
+				</span>
+			</div>
+		<ul>
+				<li  class="rrr2">
+					
+				</li>
+				<li  class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+				<li class="rrr2"></li>
+			</ul><div class="pageNav1">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div>
+		</div></div><div class="pppp">
+		<div class="floor f3"><div class="l1">
+
+				<img src=""  class="l11 ll13">
+				<span class="l2">
+					
+				</span>
+			</div><ul>
+				<li  class="rrr3">
+					
+				</li>
+				<li  class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+				<li class="rrr3"></li>
+			</ul><div class="pageNav2">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div></div></div><div class="pppp">
+		<div class="floor f4"><div class="l1">
+
+				<img src=""  class="l11 ll14">
+				<span class="l2">
+					
+				</span>
+			</div>
+		<ul>
+				<li  class="rrr4">
+					
+				</li>
+				<li  class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+				<li class="rrr4"></li>
+			</ul><div class="pageNav3">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div>
+		</div></div><div class="pppp">
+		<div class="floor f5" ><div class="l1">
+
+				<img src=""  class="l11 ll15">
+				<span class="l2">
+					
+				</span>
+			</div><ul>
+				<li  class="rrr5">
+					
+				</li>
+				<li  class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+				<li class="rrr5"></li>
+			</ul><div class="pageNav4">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div></div></div><div class="pppp">
+		<div class="floor f6" ><div class="l1">
+
+				<img src=""  class="l11 ll16">
+				<span class="l2">
+					
+				</span>
+			</div><ul>
+				<li  class="rrr6">
+					
+				</li>
+				<li  class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+				<li class="rrr6"></li>
+			</ul><div class="pageNav5">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div></div></div><div class="pppp">
+		<div class="floor f7"><div class="l1">
+
+				<img src=""  class="l11 ll17">
+				<span class="l2">
+					
+				</span>
+			</div><ul>
+				<li  class="rrr7">
+					
+				</li>
+				<li  class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+				<li class="rrr7"></li>
+			</ul><div class="pageNav6">
+						<ul class="tt1">
+							<li class="cur2"></li>
+							<li></li>
+							<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+						</ul>
+					</div></div></div>
+				
+			<!--</div>-->
+		<div class="somecontent1"></div>
+
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var leftNavLis = document.getElementById("leftNav").getElementsByTagName("li");
+			var a1 = document.getElementById("leftNav");
+			var floorArr = [];
+			var floorOffsetTopArr = [];
+			$.ajax({
+				type: "get",
+				url: "http://127.0.0.1/w/website/bannerList",
+				async: true,
+				success: function(response) {
+					var obj = response.data;
+					console.log(obj);
+					for(var i = 0; i < 5; i++) {
+						$(".boxContent").append(
+							`<li class="no"+i>
+					
+						<img src="${obj[i].img}"/>
+				
+				</li>`
+						)
+					}
+					stat();
+				}
+			});
+			$.ajax({
+				type: "get",
+				url: "http://127.0.0.1/w/website/findGoodsTypeList",
+				async: true,
+				success: function(response) {
+					var obj1 = response.data;
+					
+					console.log(obj1);
+					$(".f1 .l2").html(`${obj1[0].name}`);
+						$(".f2 .l2").html(`${obj1[1].name}`);
+							$(".f3 .l2").html(`${obj1[2].name}`);
+								$(".f4 .l2").html(`${obj1[3].name}`);
+									$(".f5 .l2").html(`${obj1[4].name}`);
+										$(".f6 .l2").html(`${obj1[5].name}`);
+											$(".f7 .l2").html(`${obj1[6].name}`);
+												
+					var imgchange=new Array;
+					for(var i = 0; i < obj1.length; i++) {
+						imgchange[i]=obj1[i].icon.replace(obj1[i].icon.substr(0,5),"http:")
+						$("#a111").append(
+							`<li><a href="分类详情.html?name=${obj1[i].name}">${obj1[i].name}</a></li>`
+						)
+					}
+//                  document.getElementsByClassName("l4")[0].innerHTML=`${imgchange}`;
+                    document.getElementsByClassName("ll11")[0].src=`${imgchange[0]}`;
+                    document.getElementsByClassName("ll12")[0].src=`${imgchange[1]}`;
+                    document.getElementsByClassName("ll13")[0].src=`${imgchange[2]}`;
+                    document.getElementsByClassName("ll14")[0].src=`${imgchange[3]}`;
+                    document.getElementsByClassName("ll15")[0].src=`${imgchange[4]}`;
+                    document.getElementsByClassName("ll16")[0].src=`${imgchange[5]}`;
+                    document.getElementsByClassName("ll17")[0].src=`${imgchange[6]}`;
+					$(".a121").append(
+						`<a href="javascript:;" class="chinses">${obj1[0].name}</a>`
+					)
+					$(".a122").append(
+						`<a href="javascript:;" class="chinses">${obj1[1].name}</a>`
+					)
+					$(".a123").append(
+						`<a href="javascript:;" class="chinses">${obj1[2].name}</a>`
+					)
+					$(".a124").append(
+						`<a href="javascript:;" class="chinses">${obj1[3].name}</a>`
+					)
+					$(".a125").append(
+						`<a href="javascript:;" class="chinses">${obj1[4].name}</a>`
+					)
+					$(".a126").append(
+						`<a href="javascript:;" class="chinses">${obj1[5].name}</a>`
+					)
+					$(".a127").append(
+						`<a href="javascript:;" class="chinses">${obj1[6].name}</a>`
+					)
+					console.log(encodeURIComponent(obj1[0].name));
+					var str0=encodeURIComponent(obj1[0].name);
+					
+					var str2=encodeURIComponent(obj1[2].name);
+					var str3=encodeURIComponent(obj1[3].name);
+					var str4=encodeURIComponent(obj1[4].name);
+					var str5=encodeURIComponent(obj1[5].name);
+					var str6=encodeURIComponent(obj1[6].name);
+//2222222222222222222222222222222222222222222222222222222222222
+$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str0,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f1 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f1 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f1 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f1 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f1 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f1 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f1 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f1 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f1 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f1 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+		var str11=encodeURIComponent(obj1[1].name);
+		console.log(obj1[1].name);
+//11111111111111111111111111111111111111
+$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str11,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f2 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f2 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f2 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f2 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f2 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f2 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f2 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f2 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f2 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f2 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+//		222222222222222222222222222222222222222222222222222
+$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str2,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f3 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f3 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f3 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f3 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f3 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f3 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f3 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f3 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f3 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f3 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+		$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str3,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f4 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f4 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f4 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f4 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f4 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f4 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f4 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f4 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f4 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f4 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+		$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str4,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f5 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f5 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f5 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f5 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f5 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f5 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f5 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f5 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f5 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f5 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+		$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str5,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f6 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f6 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f6 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f6 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f6 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f6 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f6 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f6 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f6 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f6 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+		$.ajax({
+				type:"get",
+				url:"http://127.0.0.1/w/website/findGoodsList",
+				async:true,
+				data:{
+					"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+					"info":str6,
+					"pageNo": 1
+				},
+				success:function(res){
+					console.log(res);
+					if (res.status==0) {
+						var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(obj);
+						for (var i=0;i<4;i++) {
+							$(".f7 li:eq(0)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f7 li:eq(1)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f7 li:eq(2)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f7 li:eq(3)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f7 li:eq(4)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=0;i<4;i++) {
+							$(".f7 li:eq(5)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=4;i<8;i++) {
+							$(".f7 li:eq(6)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=8;i<12;i++) {
+							$(".f7 li:eq(7)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=12;i<16;i++) {
+							$(".f7 li:eq(8)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+						for (var i=16;i<20;i++) {
+							$(".f7 li:eq(9)").append(
+								`<div class="col-md-3 col-xs-6 g4">
+						<div class="g1">
+							<img src= "${obj[i].pict_url}" />
+							<p class="g2">${obj[i].category_name}</p>
+
+							<p class="g3">${obj[i].coupon_start_fee}</p>
+							<div class="mask">
+								<a class="tiaozhuan" href="购买页面.html?name=${obj[i].item_id}====${obj[i].url}====${obj[i].title}====${obj[i].pict_url}"></a>
+
+							</div>
+						</div>`
+							)
+						}
+					}
+				}
+		});
+				}
+
+				
+			});
+			
+             
+             var maxPage=10;
+		var pageNum=1;
+		clickPageing();
+       
+		function clickPageing(){
+			if (pageNum>=1&&pageNum<=3) {
+				$(".pageNav li").eq(0).html("1");
+				$(".pageNav li").eq(1).html("2");
+				$(".pageNav li").eq(2).html("3");
+				$(".pageNav li").eq(3).html("4");
+				$(".pageNav li").eq(4).html("...");
+				$(".pageNav li").eq(5).html(maxPage-1);
+				$(".pageNav li").eq(6).html(maxPage);
+				$(".pageNav li").eq(pageNum-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum<=maxPage&&pageNum>=maxPage-2){
+				$(".pageNav li").eq(0).html("1");
+				$(".pageNav li").eq(1).html("2");
+				$(".pageNav li").eq(2).html("...");
+				$(".pageNav li").eq(3).html(maxPage-3);
+				$(".pageNav li").eq(4).html(maxPage-2);
+				$(".pageNav li").eq(5).html(maxPage-1);
+				$(".pageNav li").eq(6).html(maxPage);
+				$(".pageNav li").eq(pageNum-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav li").eq(0).html("1");
+				$(".pageNav li").eq(1).html("...");
+				$(".pageNav li").eq(2).html(pageNum-1);
+				$(".pageNav li").eq(3).html(pageNum);
+				$(".pageNav li").eq(4).html(pageNum+1);
+				$(".pageNav li").eq(5).html("...");
+				$(".pageNav li").eq(6).html(maxPage);
+				$(".pageNav li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent();
+		function bindEvent(){
+			$(".pageNav li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum=parseInt($(this).html());
+                 msy();
+				clickPageing();
+			})
+		}
+		
+		function msy(){
+			var eee=pageNum-1;
+			var ttt=document.getElementsByClassName("rrr1");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+//		1111111111111111111111111111111111111111
+		var pageNum1=1;
+		clickPageing1();
+
+		
+		function clickPageing1(){
+			if (pageNum1>=1&&pageNum1<=3) {
+				$(".pageNav1 li").eq(0).html("1");
+				$(".pageNav1 li").eq(1).html("2");
+				$(".pageNav1 li").eq(2).html("3");
+				$(".pageNav1 li").eq(3).html("4");
+				$(".pageNav1 li").eq(4).html("...");
+				$(".pageNav1 li").eq(5).html(maxPage-1);
+				$(".pageNav1 li").eq(6).html(maxPage);
+				$(".pageNav1 li").eq(pageNum1-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum1<=maxPage&&pageNum1>=maxPage-2){
+				$(".pageNav1 li").eq(0).html("1");
+				$(".pageNav1 li").eq(1).html("2");
+				$(".pageNav1 li").eq(2).html("...");
+				$(".pageNav1 li").eq(3).html(maxPage-3);
+				$(".pageNav1 li").eq(4).html(maxPage-2);
+				$(".pageNav1 li").eq(5).html(maxPage-1);
+				$(".pageNav1 li").eq(6).html(maxPage);
+				$(".pageNav1 li").eq(pageNum1-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav1 li").eq(0).html("1");
+				$(".pageNav1 li").eq(1).html("...");
+				$(".pageNav1 li").eq(2).html(pageNum1-1);
+				$(".pageNav1 li").eq(3).html(pageNum1);
+				$(".pageNav1 li").eq(4).html(pageNum1+1);
+				$(".pageNav1 li").eq(5).html("...");
+				$(".pageNav1 li").eq(6).html(maxPage);
+				$(".pageNav1 li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent1();
+		function bindEvent1(){
+			$(".pageNav1 li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum1=parseInt($(this).html());
+                 msy1();
+				clickPageing1();
+			})
+		}
+		
+		function msy1(){
+			var eee=pageNum1-1;
+			var ttt=document.getElementsByClassName("rrr2");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+		//		1111111111111111111111111111111111111111
+		var pageNum2=1;
+		clickPageing2();
+
+		
+		function clickPageing2(){
+			if (pageNum2>=1&&pageNum2<=3) {
+				$(".pageNav2 li").eq(0).html("1");
+				$(".pageNav2 li").eq(1).html("2");
+				$(".pageNav2 li").eq(2).html("3");
+				$(".pageNav2 li").eq(3).html("4");
+				$(".pageNav2 li").eq(4).html("...");
+				$(".pageNav2 li").eq(5).html(maxPage-1);
+				$(".pageNav2 li").eq(6).html(maxPage);
+				$(".pageNav2 li").eq(pageNum2-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum2<=maxPage&&pageNum2>=maxPage-2){
+				$(".pageNav2 li").eq(0).html("1");
+				$(".pageNav2 li").eq(1).html("2");
+				$(".pageNav2 li").eq(2).html("...");
+				$(".pageNav2 li").eq(3).html(maxPage-3);
+				$(".pageNav2 li").eq(4).html(maxPage-2);
+				$(".pageNav2 li").eq(5).html(maxPage-1);
+				$(".pageNav2 li").eq(6).html(maxPage);
+				$(".pageNav2 li").eq(pageNum2-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav2 li").eq(0).html("1");
+				$(".pageNav2 li").eq(1).html("...");
+				$(".pageNav2 li").eq(2).html(pageNum2-1);
+				$(".pageNav2 li").eq(3).html(pageNum2);
+				$(".pageNav2 li").eq(4).html(pageNum2+1);
+				$(".pageNav2 li").eq(5).html("...");
+				$(".pageNav2 li").eq(6).html(maxPage);
+				$(".pageNav2 li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent2();
+		function bindEvent2(){
+			$(".pageNav2 li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum2=parseInt($(this).html());
+                 msy2();
+				clickPageing2();
+			})
+		}
+		
+		function msy2(){
+			var eee=pageNum2-1;
+			var ttt=document.getElementsByClassName("rrr3");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+		//		1111111111111111111111111111111111111111
+		var pageNum3=1;
+		clickPageing3();
+
+		
+		function clickPageing3(){
+			if (pageNum3>=1&&pageNum3<=3) {
+				$(".pageNav3 li").eq(0).html("1");
+				$(".pageNav3 li").eq(1).html("2");
+				$(".pageNav3 li").eq(2).html("3");
+				$(".pageNav3 li").eq(3).html("4");
+				$(".pageNav3 li").eq(4).html("...");
+				$(".pageNav3 li").eq(5).html(maxPage-1);
+				$(".pageNav3 li").eq(6).html(maxPage);
+				$(".pageNav3 li").eq(pageNum3-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum3<=maxPage&&pageNum3>=maxPage-2){
+				$(".pageNav3 li").eq(0).html("1");
+				$(".pageNav3 li").eq(1).html("2");
+				$(".pageNav3 li").eq(2).html("...");
+				$(".pageNav3 li").eq(3).html(maxPage-3);
+				$(".pageNav3 li").eq(4).html(maxPage-2);
+				$(".pageNav3 li").eq(5).html(maxPage-1);
+				$(".pageNav3 li").eq(6).html(maxPage);
+				$(".pageNav3 li").eq(pageNum3-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav3 li").eq(0).html("1");
+				$(".pageNav3 li").eq(1).html("...");
+				$(".pageNav3 li").eq(2).html(pageNum3-1);
+				$(".pageNav3 li").eq(3).html(pageNum3);
+				$(".pageNav3 li").eq(4).html(pageNum3+1);
+				$(".pageNav3 li").eq(5).html("...");
+				$(".pageNav3 li").eq(6).html(maxPage);
+				$(".pageNav3 li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent3();
+		function bindEvent3(){
+			$(".pageNav3 li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum3=parseInt($(this).html());
+                 msy3();
+				clickPageing3();
+			})
+		}
+		
+		function msy3(){
+			var eee=pageNum3-1;
+			var ttt=document.getElementsByClassName("rrr4");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+		//		1111111111111111111111111111111111111111
+		var pageNum4=1;
+		clickPageing4();
+
+		
+		function clickPageing4(){
+			if (pageNum4>=1&&pageNum4<=3) {
+				$(".pageNav4 li").eq(0).html("1");
+				$(".pageNav4 li").eq(1).html("2");
+				$(".pageNav4 li").eq(2).html("3");
+				$(".pageNav4 li").eq(3).html("4");
+				$(".pageNav4 li").eq(4).html("...");
+				$(".pageNav4 li").eq(5).html(maxPage-1);
+				$(".pageNav4 li").eq(6).html(maxPage);
+				$(".pageNav4 li").eq(pageNum4-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum4<=maxPage&&pageNum4>=maxPage-2){
+				$(".pageNav4 li").eq(0).html("1");
+				$(".pageNav4 li").eq(1).html("2");
+				$(".pageNav4 li").eq(2).html("...");
+				$(".pageNav4 li").eq(3).html(maxPage-3);
+				$(".pageNav4 li").eq(4).html(maxPage-2);
+				$(".pageNav4 li").eq(5).html(maxPage-1);
+				$(".pageNav4 li").eq(6).html(maxPage);
+				$(".pageNav4 li").eq(pageNum4-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav4 li").eq(0).html("1");
+				$(".pageNav4 li").eq(1).html("...");
+				$(".pageNav4 li").eq(2).html(pageNum4-1);
+				$(".pageNav4 li").eq(3).html(pageNum4);
+				$(".pageNav4 li").eq(4).html(pageNum4+1);
+				$(".pageNav4 li").eq(5).html("...");
+				$(".pageNav4 li").eq(6).html(maxPage);
+				$(".pageNav4 li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent4();
+		function bindEvent4(){
+			$(".pageNav4 li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum4=parseInt($(this).html());
+                 msy4();
+				clickPageing4();
+			})
+		}
+		
+		function msy4(){
+			var eee=pageNum4-1;
+			var ttt=document.getElementsByClassName("rrr5");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+		//		1111111111111111111111111111111111111111
+		var pageNum5=1;
+		clickPageing5();
+
+		
+		function clickPageing5(){
+			if (pageNum5>=1&&pageNum5<=3) {
+				$(".pageNav5 li").eq(0).html("1");
+				$(".pageNav5 li").eq(1).html("2");
+				$(".pageNav5 li").eq(2).html("3");
+				$(".pageNav5 li").eq(3).html("4");
+				$(".pageNav5 li").eq(4).html("...");
+				$(".pageNav5 li").eq(5).html(maxPage-1);
+				$(".pageNav5 li").eq(6).html(maxPage);
+				$(".pageNav5 li").eq(pageNum5-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum5<=maxPage&&pageNum5>=maxPage-2){
+				$(".pageNav5 li").eq(0).html("1");
+				$(".pageNav5 li").eq(1).html("2");
+				$(".pageNav5 li").eq(2).html("...");
+				$(".pageNav5 li").eq(3).html(maxPage-3);
+				$(".pageNav5 li").eq(4).html(maxPage-2);
+				$(".pageNav5 li").eq(5).html(maxPage-1);
+				$(".pageNav5 li").eq(6).html(maxPage);
+				$(".pageNav5 li").eq(pageNum5-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav5 li").eq(0).html("1");
+				$(".pageNav5 li").eq(1).html("...");
+				$(".pageNav5 li").eq(2).html(pageNum5-1);
+				$(".pageNav5 li").eq(3).html(pageNum5);
+				$(".pageNav5 li").eq(4).html(pageNum5+1);
+				$(".pageNav5 li").eq(5).html("...");
+				$(".pageNav5 li").eq(6).html(maxPage);
+				$(".pageNav5 li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent5();
+		function bindEvent5(){
+			$(".pageNav5 li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum5=parseInt($(this).html());
+                 msy5();
+				clickPageing5();
+			})
+		}
+		
+		function msy5(){
+			var eee=pageNum5-1;
+			var ttt=document.getElementsByClassName("rrr6");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+		//		1111111111111111111111111111111111111111
+		var pageNum6=1;
+		clickPageing6();
+
+		
+		function clickPageing6(){
+			if (pageNum6>=1&&pageNum6<=3) {
+				$(".pageNav6 li").eq(0).html("1");
+				$(".pageNav6 li").eq(1).html("2");
+				$(".pageNav6 li").eq(2).html("3");
+				$(".pageNav6 li").eq(3).html("4");
+				$(".pageNav6 li").eq(4).html("...");
+				$(".pageNav6 li").eq(5).html(maxPage-1);
+				$(".pageNav6 li").eq(6).html(maxPage);
+				$(".pageNav6 li").eq(pageNum6-1).addClass("cur").siblings().removeClass("cur");
+			} else if(pageNum6<=maxPage&&pageNum6>=maxPage-2){
+				$(".pageNav6 li").eq(0).html("1");
+				$(".pageNav6 li").eq(1).html("2");
+				$(".pageNav6 li").eq(2).html("...");
+				$(".pageNav6 li").eq(3).html(maxPage-3);
+				$(".pageNav6 li").eq(4).html(maxPage-2);
+				$(".pageNav6 li").eq(5).html(maxPage-1);
+				$(".pageNav6 li").eq(6).html(maxPage);
+				$(".pageNav6 li").eq(pageNum6-maxPage-1).addClass("cur").siblings().removeClass("cur");
+			}else{
+				$(".pageNav6 li").eq(0).html("1");
+				$(".pageNav6 li").eq(1).html("...");
+				$(".pageNav6 li").eq(2).html(pageNum6-1);
+				$(".pageNav6 li").eq(3).html(pageNum6);
+				$(".pageNav6 li").eq(4).html(pageNum6+1);
+				$(".pageNav6 li").eq(5).html("...");
+				$(".pageNav6 li").eq(6).html(maxPage);
+				$(".pageNav6 li").eq(3).addClass("cur").siblings().removeClass("cur");
+			}
+		}
+		bindEvent6();
+		function bindEvent6(){
+			$(".pageNav6 li").click(function(event){
+				if ($(this).html()=="...") {
+					return;
+				}
+				pageNum6=parseInt($(this).html());
+                 msy6();
+				clickPageing6();
+			})
+		}
+		
+		function msy6(){
+			var eee=pageNum6-1;
+			var ttt=document.getElementsByClassName("rrr7");
+			var tt = Array.prototype.slice.call(ttt);
+			for(var i=0;i<10;i++){
+				tt[i].style.display="none";
+			};
+			tt[eee].style.display="block";
+		}
+			/*var ttt=document.getElementsByClassName("f1")[0].getElementsByTagName("li");
+			var aaaaa=0;
+			var tt = Array.prototype.slice.call(ttt);
+			
+			for(var i=0;i<10;i++){
+				eee[i].style.display="none";
+			};
+			eee[aaaaa].style.display="block";*/
+            //			111111111111111111111111111111111111111111111111111111111	
+			function stat() {
+				var box = document.getElementById('box');
+				var no0 = box.getElementsByTagName("li")[0];
+				var no1 = box.getElementsByTagName("li")[1];
+				var no2 = box.getElementsByTagName("li")[2];
+				var no3 = box.getElementsByTagName("li")[3];
+				var no4 = box.getElementsByTagName("li")[4];
+				var e1 = 0;
+				/*no0.onclick=function(){
+					clearInterval(timer);
+					move();
+					
+				}*/
+				function move1() {
+					animate(no1, {
+						"left": 760
+					}, 1000, function() {})
+					animate(no2, {
+						"left": 820
+					}, 1000, function() {})
+					animate(no3, {
+						"left": 880
+					}, 1000, function() {})
+					animate(no4, {
+						"left": 940
+					}, 1000, function() {})
+
+//					console.log(e1);
+				}
+
+				function move2() {
+					animate(no1, {
+						"left": 60
+					}, 1000, function() {})
+					animate(no2, {
+						"left": 820
+					}, 1000, function() {})
+					animate(no3, {
+						"left": 880
+					}, 1000, function() {})
+					animate(no4, {
+						"left": 940
+					}, 1000, function() {})
+
+//					console.log(e1);
+				}
+
+				function move3() {
+					animate(no1, {
+						"left": 60
+					}, 1000, function() {})
+					animate(no2, {
+						"left": 120
+					}, 1000, function() {})
+					animate(no3, {
+						"left": 880
+					}, 1000, function() {})
+					animate(no4, {
+						"left": 940
+					}, 1000, function() {})
+
+//					console.log(e1);
+				}
+
+				function move4() {
+					animate(no1, {
+						"left": 60
+					}, 1000, function() {})
+					animate(no2, {
+						"left": 120
+					}, 1000, function() {})
+					animate(no3, {
+						"left": 180
+					}, 1000, function() {})
+					animate(no4, {
+						"left": 940
+					}, 1000, function() {})
+
+//					console.log(e1);
+				}
+
+				function move5() {
+					animate(no1, {
+						"left": 60
+					}, 1000, function() {})
+					animate(no2, {
+						"left": 120
+					}, 1000, function() {})
+					animate(no3, {
+						"left": 180
+					}, 1000, function() {})
+					animate(no4, {
+						"left": 240
+					}, 1000, function() {})
+
+					//				console.log(e1);
+				}
+				var timer;
+
+				function move() {
+					timer = setInterval(function() {
+						//		 	clearInterval(timer);
+						e1++;
+						if(e1 == 1) {
+							move1();
+						}
+						if(e1 == 2) {
+							move2();
+						}
+						if(e1 == 3) {
+							move3();
+						}
+						if(e1 == 4) {
+							move4();
+						}
+						if(e1 == 5) {
+							move5();
+						}
+						if(e1 == 6) {
+							e1 = 0;
+						}
+						//		 	timer();
+					}, 2000);
+				}
+				box.onmouseover = function() {
+					clearInterval(timer);
+				}
+				box.onmouseout = function() {
+					move();
+
+				}
+				no0.onclick = function() {
+					clearInterval(timer);
+					move1();
+					e1 = 1
+				}
+				no1.onclick = function() {
+					clearInterval(timer);
+					move2();
+					e1 = 2
+				}
+				no2.onclick = function() {
+					clearInterval(timer);
+					move3();
+					e1 = 3
+				}
+				no3.onclick = function() {
+					clearInterval(timer);
+					move4();
+					e1 = 4
+				}
+				no4.onclick = function() {
+					clearInterval(timer);
+					move5();
+					e1 = 5
+				}
+				move();
+			}
+			for(var i = 0; i < document.body.childNodes.length; i++) {
+				if(document.body.childNodes[i].nodeType == 1 && document.body.childNodes[i].className.indexOf("pppp") != -1) {
+					floorArr.push(document.body.childNodes[i]);
+					floorOffsetTopArr.push(document.body.childNodes[i].offsetTop);
+				}
+			}
+			var floorArrLength = floorArr.length;
+			floorOffsetTopArr.push(floorArr[floorArrLength - 1].clientHeight + floorOffsetTopArr[floorArrLength - 1])
+			var nowfloor = NaN;
+			window.onscroll = function() {
+				var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+				for(var i = 0; i < floorArrLength; i++) {
+					if(scrollTop >= floorOffsetTopArr[i] - 200 && scrollTop < floorOffsetTopArr[i + 1] - 200) {
+						if(i != nowfloor) {
+							!isNaN(nowfloor) && (leftNavLis[nowfloor].className = "");
+							nowfloor = i;
+							leftNavLis[nowfloor].className = "cur";
+						}
+						break;
+					}
+
+				}
+				if(scrollTop > 60) {
+					$("#a2").attr('id', 'cuu');
+					$("#a33").attr('id', 'cuuu');
+				}
+				if(scrollTop <= 60) {
+					$("#cuu").attr('id', 'a2');
+					$("#cuuu").attr('id', 'a33');
+				}
+				if(i == floorArrLength) {
+					!isNaN(nowfloor) && (leftNavLis[nowfloor].className = "")
+					nowfloor = NaN;
+				}
+
+				//				console.log(i);
+				if(scrollTop >= 700) {
+					a1.style.display = "block";
+					//					(function(){$("a1").slideToggle(800)})()
+					//                console.log(1123);
+				}
+				if(scrollTop < 700) {
+					a1.style.display = "none";
+					//					$("a1").slideToggle(800)
+					//                console.log(1123);
+				}
+			}
+
+			for(var i = 0; i < leftNavLis.length; i++) {
+				leftNavLis[i].index = i;
+				leftNavLis[i].onclick = function() {
+					idx = this.index;
+					scrollAnimate(floorOffsetTopArr[this.index], 600);
+				}
+			}
+
+			function scrollAnimate(target, time) {
+				var framNumber = 0;
+				var start = document.body.scrollTop || document.documentElement.scrollTop;
+				var distance = target - start;
+				var interval = 10;
+				var maxFrame = time / interval;
+				clearInterval(timer);
+				var timer = setInterval(function() {
+					framNumber++;
+					if(framNumber == maxFrame) {
+						clearInterval(timer);
+						document.body.scrollTop = document.documentElement.scrollTop = CubicEaseInOut(framNumber, start, distance, maxFrame)
+					}
+				}, 10)
+			}
+
+			function CubicEaseInOut(t, b, c, d) {
+				if((t /= d / 2) < 1) return c / 2 * t * t * t + b;
+				return c / 2 * ((t -= 2) * t * t + 2) + b;
+			}
+		</script>
+	</body>
+
+</html>

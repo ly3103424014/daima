@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			p{
+				width: 0px;
+				height: 60px;
+				margin: 10px;
+				background-color: orange;
+				
+			}
+		</style>
+	</head>
+	<body>
+     <p style="width:0px;"></p>
+     <p style="width:60px;"></p>
+     <p style="width:120px;"></p>
+     <p style="width:180px;"></p>
+     <p style="width:240px;"></p>
+     <p style="width:300px;"></p>
+     <p style="width:360px;"></p>
+     <p style="width:420px;"></p>
+     <p style="width:480px;"></p>
+     <p style="width:540px;"></p>
+     <script src="js源.js" type="text/javascript" charset="utf-8"></script>
+     <script type="text/javascript">
+//   	$("p").each(function(i){
+//   		$(this).animate({"width":60*i},1000)
+//   	})
+     	$("p").each(function(){
+     		$(this).animate({"width":60*$(this).index()},1000)
+     	})
+     </script>
+	</body>
+</html>

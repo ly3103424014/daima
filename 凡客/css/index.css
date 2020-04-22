@@ -1,0 +1,440 @@
+#top
+{
+	/*border: 1px solid  white;*/
+	width: 1050px;
+	height:1700px;
+}
+#diyige
+{
+	border: 1px solid whitesmoke;
+	width: 1050px;
+	height:60px;
+	background: white;
+}
+#yi
+{
+	border: 1px solid whitesmoke;
+	width: 200px;
+	height:40px;
+	background: white;
+	margin-top: 10px;
+}
+#a1
+{
+	border: 1px solid whitesmoke;
+	width: 130px;
+	height:40px;
+	background: white;
+	margin-left: 200px;
+	margin-top: -42px;
+	float: left;
+}
+#a2
+{
+	border: 1px solid whitesmoke;
+	width: 140px;
+	height:40px;
+	background: white;
+	margin-left: 330px;
+	margin-top: -42px;
+	float: left;
+}
+#a3
+{
+	border: 1px solid whitesmoke;
+	width: 140px;
+	height:40px;
+	background: white;
+	margin-left: 550px;
+	margin-top: -42px;
+	float: left;
+}
+#a4
+{
+	border: 1px solid whitesmoke;
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left: 680px;
+	margin-top: -42px;
+	float: left;
+}
+#a5
+{
+	border: 1px solid whitesmoke;
+	width:150px;
+	height:40px;
+	background: white;
+	margin-left: 890px;
+	margin-top: -42px;
+	float: left;
+}
+#dierge
+{
+	border: 1px solid  whitesmoke;
+	width:1050px;
+	height:100px;
+	background: white;
+}
+#b1
+{
+	border: 1px solid  whitesmoke;
+	width:300px;
+	height:70px;
+	background: white;
+}
+#b2
+{
+	border: 1px solid  whitesmoke;
+	width:154px;
+	height:20px;
+	background:white;
+	margin-left: 400px;
+	margin-top: -60px;
+}
+#b3
+{
+	border: 1px solid  whitesmoke;
+	width:60px;
+	height:20px;
+	background: white;
+	margin-left: 554px;
+	margin-top: -22px;
+}
+#b4
+{
+	border: 1px solid  whitesmoke;
+	width:330px;
+	height:30px;
+	background: white;
+	margin-left: 400px;
+	margin-top: 0px;
+}
+#b5
+{
+	border: 1px solid  whitesmoke;
+	width:330px;
+	height:30px;
+	background: white;
+	margin-left: 720px;
+	margin-top: -65px;
+}
+#b6
+{
+	border: 1px solid  whitesmoke;
+	width:330px;
+	height:30px;
+	background: white;
+	margin-left: 720px;
+	margin-top: -13px;
+}
+#disange
+{
+	border: 1px solid  white;
+	width:1050px;
+	height:100px;
+	background: white;
+}
+#c1
+{
+	border: 1px solid  white;
+	width:950px;
+	height:20px;
+	background: brown;
+	margin-left: 100px;
+	margin-top: 10px;
+	color:white;
+	
+}
+#c2
+{
+	border: 1px solid  white;
+	width:90px;
+	height:20px;
+	background: white;
+	margin-left:820px;
+	margin-top: -23px;
+}
+#c3
+{
+	border: 1px solid  white;
+	width:950px;
+	height:40px;
+	background: white;
+	margin-left: 100px;
+	margin-top: 10px;
+	color:black;
+}
+#disige
+{
+	border: 1px solid white;
+	width:1050px;
+	height:100px;
+	background: white;
+}
+#d1
+{
+	border: 1px solid  white;
+	width:980px;
+	height:60px;
+	background: white;
+	margin-left: 70px;
+	margin-top: -10px;
+	
+}
+#diwuge
+{
+	border: 1px solid  white;
+	width:1050px;
+	height:380px;
+	background: white;
+}
+#e1
+{
+	/*border: 1px solid  white;*/
+	width:800px;
+	height:340px;
+	background: white;
+    margin-left: 30px;
+    margin-top: -15px;
+	
+}	
+#e2
+{
+	/*border: 1px solid  white;*/
+	width:340px;
+	height:380px;
+	background: white;
+	margin-left: 750px;
+	margin-top: -342px;
+}
+#diliuge
+{
+	/*border: 1px solid  white;*/
+	width:1050px;
+	height:380px;
+	background: white;
+	margin-left:-755px;
+	margin-top: 5px;
+}
+#f1
+{
+	/*border: 1px solid  white;*/
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+#f2
+{
+	/*border: 1px solid  white;*/
+	width:800px;
+	height:40px;
+	background: white;
+	margin-left: 250px;
+	margin-top: -42px;
+}
+#f3
+{
+	/*border: 1px solid  white;*/
+	width:100px;
+	height:40px;
+	background: white;
+	margin-left:950px;
+	margin-top: -42px;
+}
+#f4
+{
+	
+	/*border: 1px solid  white;*/
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left:0px;
+	margin-top: 20px;
+}
+#f5
+{
+	/*border: 1px solid  white;*/
+	width:800px;
+	height:40px;
+	background: white;
+	margin-left: 250px;
+	margin-top: -42px;
+}
+#f6
+{
+	/*border: 1px solid  white;*/
+	width:100px;
+	height:40px;
+	background: white;
+	margin-left:950px;
+	margin-top: -42px;
+}
+#f7
+{
+	/*border: 1px solid  white;*/
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left:0px;
+	margin-top: 20px;
+}
+#f8
+{
+	/*border: 1px solid  white;*/
+	width:800px;
+	height:40px;
+	background: white;
+	margin-left: 250px;
+	margin-top: -42px;
+}
+#f9
+{
+	/*border: 1px solid  white;*/
+	width:100px;
+	height:40px;
+	background: white;
+	margin-left:950px;
+	margin-top: -42px;
+}
+#f10
+{
+	/*border: 1px solid  white;*/
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left:0px;
+	margin-top: 20px;
+}
+#f11
+{
+	/*border: 1px solid  white;*/
+	width:800px;
+	height:40px;
+	background: white;
+	margin-left: 250px;
+	margin-top: -42px;
+}
+#f12
+{
+	/*border: 1px solid  white;*/
+	width:100px;
+	height:40px;
+	background: white;
+	margin-left:950px;
+	margin-top: -42px;
+}
+
+}
+#f14
+{
+	
+	/*border: 1px solid  white;*/
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left:0px;
+	margin-top: 20px;
+}
+#f15
+{
+	/*border: 1px solid  white;*/
+	width:100px;
+	height:40px;
+	background: white;
+	margin-left:480px;
+	margin-top: -42px;
+}
+#f16
+{
+	/*border: 1px solid  white;*/
+	width:250px;
+	height:40px;
+	background: white;
+	margin-left:600px;
+	margin-top: -42px;
+}
+#f17
+{
+	/*border: 1px solid  white;*/
+	width:100px;
+	height:40px;
+	background: white;
+	margin-left:950px;
+	margin-top: -42px;
+}
+#diqige
+{
+	/*border: 1px solid  white;*/
+	width:1050px;
+	height:250px;
+	background: white;
+	margin-left:0px;
+	margin-top: 0px;
+}
+#g1
+{
+	/*border: 1px solid  white;*/
+	width:465px;
+	height:210px;
+	background: white;
+	margin-left:0px;
+	margin-top: 10px;
+}
+#g2
+{
+	/*border: 1px solid  white;*/
+	width:240px;
+	height:200px;
+	background: white;
+	margin-left:467px;
+	margin-top: -210px;
+}
+#g3
+{
+	/*border: 1px solid  white;*/
+	width:285px;
+	height:210px;
+	background: white;
+	margin-left:765px;
+	margin-top: -200px;
+}
+#dibage
+{
+	/*border: 1px solid  white;*/
+	width:1050px;
+	height:80px;
+	background: white;
+	margin-left:px;
+	margin-top: px;
+}
+#h1
+{
+	/*border: 1px solid  white;*/
+	width:700px;
+	height:60px;
+	background: white;
+	margin-left:px;
+	margin-top:10px;
+}
+#h2
+{
+	/*border: 1px solid  white;*/
+	width:350px;
+	height:60px;
+	background: white;
+	margin-left:700px;
+	margin-top: -60px;
+}
+#dijiuge
+{
+	/*border: 1px solid  white;*/
+	width:1050px;
+	height:360px;
+	background: white;
+	margin-left:px;
+	margin-top: px;
+}
+

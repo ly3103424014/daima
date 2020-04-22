@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				background-color: greenyellow;
+				left: 100px;
+				top: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" name="" id="" value="stop()" />
+		<input type="button" name="" id="" value="stop(true)" />
+		<input type="button" name="" id="" value="stop(true,true)" />
+		<input type="button" name="" id="" value="stop(false,true)" />
+		<input type="button" name="" id="" value="finish()" />
+		<input type="button" name="" id="" value="finish(true)" />
+		<input type="button" name="" id="" value="finish(true,true)" />
+		<input type="button" name="" id="" value="finish(false,true)" />
+		<div style="left: 100px; top: 100px;">
+		</div>
+		<script src="js源.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("div").animate({ "left": 800 }, 2000)
+			$("div").animate({ "top": 300 }, 2000)
+			$("div").animate({ "left": 100 }, 2000)
+			$("div").animate({ "top": 100 }, 2000)
+			$("input:eq(0)").click(function() {
+				$("div").stop();
+			})
+			$("input:eq(1)").click(function() {
+				$("div").stop(true);
+			})
+			$("input:eq(2)").click(function() {
+				$("div").stop(true, true);
+			})
+			$("input:eq(3)").click(function() {
+				$("div").stop(false, true);
+			})
+			$("input:eq(4)").click(function() {
+				$("div").finish();
+			})
+			$("input:eq(5)").click(function() {
+				$("div").finish(true);
+			})
+			$("input:eq(6)").click(function() {
+				$("div").finish(true,true);
+			})
+			$("input:eq(7)").click(function() {
+				$("div").finish(false,true);
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>欢迎您，请先登录注册</title>
+
+		<link rel="stylesheet" type="text/css" href="登录.css" />
+
+	</head>
+
+	<body>
+		<div class="box1">
+			<input type="text" name="" id="" value="" class="qq" />
+			<input type="password" name="" id="" value="" class="qq" />
+			<input type="button" name="" id="" value="登录" class="qq q1" />
+		</div>
+		<script type="text/javascript">
+			var Obox1 = document.getElementsByTagName("input")[0];
+			var Obox2 = document.getElementsByTagName("input")[1];
+			var Obox3 = document.getElementsByTagName("input")[2];
+			Obox3.onfocus = function() {
+				Obox1.style.borderColor = "hotpink";
+				Obox2.style.borderColor = "hotpink";
+			}
+			Obox3.onblur = function() {
+				Obox1.style.borderColor = "";
+				Obox2.style.borderColor = "";
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			 function Dog(){
+				
+			}
+			function Cat(){
+				
+			}
+			Cat.prototype=new Dog();
+			var hellokitty=new Cat();
+			console.log(hellokitty.constructor);//function Dog(){}
+			console.log(hellokitty instanceof Cat)//t
+			console.log(hellokitty instanceof Dog)//t
+		</script>
+		
+	</body>
+</html>

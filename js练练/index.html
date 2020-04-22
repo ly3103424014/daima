@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+    <script type="text/javascript">
+//	var a;
+//	a=123+45*78;
+//	var b;
+//	b=34+543;
+//	var c;
+//	c=9*(324-34);
+//	var d;
+//	d=a/b-c;
+//	console.log(d);
+//  var a=parseInt(prompt("请输入摄氏度"));
+//  var b;
+//  b=9/5*a+32;
+//  alert("华氏温度"+b);
+//  var a=Math.pow(5,7);
+//  var b;
+//  b=(23+a)/45;
+//  var c=Math.pow(b,2);
+//  console.log(c);
+//  var a=parseInt(prompt("请输入输入六边形的边长"));
+//  var b=Math.sqrt(27)/2;
+//  var c;
+//  c=b*Math.pow(a,2);
+//  alert("六边形面积"+c);
+//  var days=parseInt(prompt("请输入几天后"));
+//  var xingqi=(2+days%7)%7;
+//  alert("我已经计算出了"+days+'天后是星期'+xingqi);
+//  var shu=parseInt(prompt("请输入一个三位数"));
+//  var gewei=parseInt(shu%10);
+//  var shiwei=parseInt(shu/10)%10;
+//  var baiwei=parseInt(shu/100);
+//  var i;
+//  i=gewei+shiwei+baiwei;
+//  alert(i);
+//  var a=parseInt(prompt("请输入一个数字"));
+//  if(a%5==0&&a%6==0){
+//  	alert("这个数可以被5和6整除");	
+//  }else if(a%5==0&&a%6!=0){
+//      alert("这个数可以被5整除，不可以被6整除");	
+//  }else if(a%5!=0&&a%6==0){
+//  	alert("这个数可以被6整除，不可以被5整除");
+//  }else{
+//  	alert("这个数即不能被5整除，也不能被6整除");
+//  }
+//  var a=parseInt(prompt("请输入一个数字"));
+//  var b=parseInt(prompt("请再输入一个数字"));
+//  if(a%2==0&&b%2==0||a%2!=0&&b%2!=0){
+//  	alert("您好，这两个数奇偶性相同")
+//  }else{
+//  	alert("这两个数奇偶性不同")
+//  }
+//  var a=parseInt(prompt("请输入一个年份"));
+//  if(a%100==0){
+//  	if(a%400==0){
+//  		alert("此年为闰年")
+//  	}else{
+//  		alert("此年不为闰年")
+//  	}
+//  }else if(a%4==0){
+//  	alert("此年为闰年")
+//  }else{
+//  	alert("此年不为闰年")
+//  }
+//  var a=parseInt(prompt("请输入工作年份"));
+//  var b=parseInt(prompt("请输入月薪"));
+//  if(a==0){
+//  	if(b>8000){
+//  		alert("年终奖"+b*1.2);
+//  	}else{
+//  		alert("年终奖"+b*1);
+//  	}
+//  }else if(a==1){
+//  	if(b>10000){
+//  		alert("年终奖"+b*1.7);
+//  	}else{
+//  		alert("年终奖"+b*1.5);
+//  	}
+//  }else if(a>=2){
+//  	if(b>12000){
+//  		alert("年终奖"+b*3.2);
+//  	}else{
+//  		alert("年终奖"+b*3);
+//  	}
+//  }
+//  1.for(var a=1; a<=1000;a++){
+//  	if(a%5==0||a%6==0){
+//  		console.log(a);
+//  	}
+//  }
+//  2.var a=parseInt(prompt("请输入一个数字"));
+//  var sum=0;
+//  for(var i=1; i<=a; i++){
+//  	sum=sum+i;
+//  	console.log(sum);
+//  }
+//  3.
+//  var a=parseInt(prompt("请输入一个数字"));
+//  var sum=0;
+//  for(var i=2; i<=a; i++){
+//  	sum=sum+(i+1)/i;
+//  }
+//  alert(sum);
+//  4.var a=parseInt(prompt("请输入一个数字"));
+//  for(var i=1; i<=a; i++){
+//  	if(a%i==0){
+//  		console.log(i);
+//  	}
+//  }
+//  5.
+//    for(var i=1; i<=60; i++){
+//    	if(i%7!=0||i%10!=7){
+//    		console.log(i);
+//    	}
+//    }
+//  6.
+//           for (i=100;i<=1000;i++)
+//           {
+//           	var gewei=parseInt(i%10);
+//           	var shiwei=parseInt(i/10%10);
+//           	var baiwei=parseInt(i/100);
+//           	if(Math.pow(gewei,3)+Math.pow(shiwei,3)+Math.pow(baiwei,3)==i)
+//           	{
+//           		console.log(i+"水仙花");
+//           	}
+//           }
+//   7.完美数
+//   for(var i=1;i<=1000;i++)
+//   {
+//   	var sum=0;
+//   	for(var k=1;k<i;k++){
+//   		if(i%k==0){
+//   			sum+=k;
+//   		}
+//   	}if(sum==i){
+//   		console.log(i);
+//   	}
+//   }
+//   8.
+//   for(var i=2;i<=1000;i++){
+//   	var count=0;
+//   	for(var j=1;j<=i;j++)
+//   	{
+//   		if(i%j==0)
+//   		{
+//   			count++;
+//   		}
+//   	}
+//   	if(count==2){
+//   	console.log(i);
+//      }
+//   }
+//   9.
+//   var n=parseInt(prompt("请输入一个数"));
+//   for(var i=2;i<=n;i++)
+//   {
+//   	var count=0;
+//   	for(var j=1;j<=i;j++)
+//   	{
+//   		if(i%j==0)
+//   		{
+//   			count++;
+//   		}
+//   	}
+//   	if(count==2){
+//   	console.log(i);
+//      }
+//   }
+//   10.
+//   for (var x=0;x<=100;x++){
+//   	for (var y=0;y<=100;y++){
+//   		for (var z=0;z<=100;z++){
+//   			if (x+y+z==100&&3*x+2*y+z==200){
+//   				console.log(x,y,z);
+//   			}
+//   		}
+//   	}
+//   }
+//   1.
+//求1! + 2! + 3! + 4! + …… + 10!的和
+//叹号表示阶乘，如4! = 1 * 2 * 3 * 4
+//   function jiecheng(a){
+//   	var s=1;
+//   	for(i=1;i<=a;i++){
+//   		s*=i;
+//   	}
+//   	return s;
+//   }
+//   var sum=0;
+//   for(var a=1;a<=10;a++){
+//   	sum+=jiecheng(a);
+//   }
+//   console.log(sum);
+//   2.
+//求一个三位数，该三位数等与其每位数字的阶乘之和。
+//   function jiecheng(a){
+//   	var s=1;
+//   	for(i=1;i<=a;i++){
+//   		s*=i;
+//   	}
+//   	return s;
+//   }
+//   for(var s=100;s<1000;s++){
+//   	var gewei=parseInt(s%10);
+//   	var shiwei=parseInt(s/10%10);
+//   	var baiwei=parseInt(s/100);
+//   	if(jiecheng(gewei)+jiecheng(shiwei)+jiecheng(baiwei)==s){
+//   		console.log(s);
+//   	}
+//   }
+//   3.
+//   编写一个函数rev用于将一个整数前后倒置。
+//   例如rev(12345)将返回54321，rev(123)将返回321
+//   整数位数不限制，多少位都行。
+//   function rev(a){
+//   	var b=0;
+//   	while(a){
+//   		b=b*10+a%10;
+//   		a=parseInt(prompt(a/10));
+//   	}
+//   	return b;
+//   }
+//   alert(54321);
+//   4.
+//   如果整数A 的全部约数（包括1，不包括A 本身）之和等于B，且整数B 的全部约数
+//     （包括1，不包括B 本身）之和等于A，则称整数A和B是一对亲密数。
+//   求3000 以内的全部亲密数。
+//   function yueshuhe(a){
+//   	var sum=0;
+//   	for(var i=1;i<a;i++){
+//   		if(a%i==0){
+//   			sum+=i;
+//   		}
+//   	}
+//   	return sum;
+//   }
+//   for(var A=1;A<=3000;A++){
+//   	var B=yueshuhe(A);
+//   	if(A==yueshuhe(B)&&A!=B){
+//   		console.log(A+"和"+B+"是一对约数和");
+//   	}
+//   }
+
+
+    </script>
+	</body>
+   
+</html>
