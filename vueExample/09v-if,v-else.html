@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+</head>
+<body>
+    <div id="box">
+       <div v-if="seen">我们又见面了</div>
+       <div v-else>好久不见了</div>
+       <!-- 可以做选项卡 -->
+       <h2 v-if="type==='A'">我是老大</h2>
+       <h2 v-else-if="type==='B'">我是老二</h2>
+       <h2 v-else-if="type==='C'">我是老三</h2>
+       <h2 v-else>我不是老大</h2>
+    </div>
+    <script>
+     let vm=new Vue({
+        el:"#box",
+        data:{
+           abc:'',
+           seen:false,
+           type:'H',
+        }
+    })
+    </script>
+</body>
+</html>
