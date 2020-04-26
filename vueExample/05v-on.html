@@ -5,8 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="javascript/vue.js"></script>
 </head>
 <body>
-    
+    <div id="box">
+            <input type="button" value="点击" v-on:click="btn" />
+            <input type="button" value="点击" @click="change" />
+            <input type="button" value="点击11" @click="say('say htllo')" />
+        <input type="button" value="点击11" @click.stop="doThis" />
+        <input type="button" value="按下" @keyup.enter="onEnter" />
+        <input type="button" value="按下抬起" v-on="{ mousedown: doThisdown, mouseup: doThat }" />
+
+    </div>
+    <script>
+     let vm = new Vue({
+         el:"#box",
+         data:{
+
+         },
+         methods:{
+             change(){
+                 alert(111)
+             },
+             btn(){
+                 alert("你好世界")
+             },
+             say(aa) {
+                    alert(aa);
+                },
+                doThis() {
+                    alert("阻止冒泡");
+                },
+                onEnter() {
+                    alert('我是enter键');
+                },
+                doThisdown() {
+                    console.log("我是鼠标按下事件")
+                },
+                doThat() {
+                    console.log("我是鼠标抬起事件");
+                }
+         }
+     })
+    </script>
 </body>
 </html>
