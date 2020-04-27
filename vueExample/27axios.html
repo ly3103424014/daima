@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+    <script src=" https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</head>
+<body>
+    <div id="box">
+        <input type="button" value="获取数据" @click="getdata()"> 
+        <ul>
+            <li v-for="(item,index) in datalist">
+                <h3>
+                    <font color="red">{{item.chinese}}</font>
+                </h3>
+                <h4>
+                    <font color="yellow">{{item.english}}</font>
+                </h4>
+            </li>
+        </ul>
+    </div>
+    <script>
+    new Vue({
+        el:"#box",
+        data:{
+            datalist:[]
+        },
+       methods:{
+        getdata(){
+            axios.get("http://route.showapi.com/1211-1",{
+                params: {
+                            showapi_appid: '169918',
+                            count: 15,
+                            showapi_sign: '98f9f74498de4848959732dd56035b52'
+                        }
+            }).then(res => {
+                this.datalist = res.data.showapi_res_body.data;
+                        console.log(this.datalist);
+            })
+        }
+       },
+        
+    })
+    </script>
+</body>
+</html>

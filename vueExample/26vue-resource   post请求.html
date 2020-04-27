@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="javascript/vue.js"></script>
+    <script src=" https://cdn.bootcdn.net/ajax/libs/vue-resource/1.5.1/vue-resource.min.js"></script>
+   
+</head>
+<body>
+    <div id="box">
+      {{news}}
+<input type="button" value="获取数据" @click="getdata()"> 
+    </div>
+    <script>
+    new Vue({
+        el:"#box",
+        data:{
+            news:"天气不错"
+        },
+        methods:{
+            getdata(){
+                // Promise.then(箭头函数)模板引擎class类   是es6新特性
+        //   promise.then((res)=>{console.log(res)})
+        this.$http.post("http://route.showapi.com/1211-1?showapi_appid=169918&count=5&showapi_sign=98f9f74498de4848959732dd56035b52").then(res => {
+            console.log(res);
+            })
+            }
+        },
+    })
+    </script>
+</body>
+</html>
